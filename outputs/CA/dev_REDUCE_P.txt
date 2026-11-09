@@ -1,0 +1,110 @@
+CA reduce dev block P: 8 images, 640 runs; rep_psnr mean 36.2 (min 29.1 max 50.5)
+
+R0-vs-R1 matching (descriptive): mass_ratio 1.000 [0.998, 1.000]; peak_R0 1.015 [0.996, 1.063]; peak_R1 1.000 [1.000, 1.000]; grad_energy_ratio 0.930 [0.808, 0.997]; lap_energy_ratio 0.842 [0.615, 0.998]
+
+Q-AUC [dB] by cell and arm (mean over images):
+cell                IND1     OBS-I     OBS-J     RND-J     SPA-J
+R0/free            24.46     23.52     24.16     24.04     24.20
+R0/noisy           22.55     22.62     22.32     22.70     21.97
+R1/free            23.88     23.03     23.42     23.45     23.54
+R1/noisy           22.14     22.23     21.80     22.25     21.67
+
+GAP OBS-J - RND-J (dB; BCa 90% two-sided = one-sided 95% bounds; D if UB<-0.25, E if LB>-0.25):
+  R0/free    mean +0.129  LB5 -0.163  UB95 +0.279  wins 7/8  sd 0.37  -> E
+  R0/noisy   mean -0.381  LB5 -0.638  UB95 -0.141  wins 2/8  sd 0.45  -> I
+  R1/free    mean -0.023  LB5 -0.262  UB95 +0.092  wins 5/8  sd 0.29  -> I
+  R1/noisy   mean -0.444  LB5 -0.577  UB95 -0.310  wins 0/8  sd 0.25  -> D
+  N_effect(noise)    mean -0.466  LB5 -0.585  UB95 -0.361  sd 0.21  MDE80 0.18
+  R_effect(rep+HF content) mean -0.108  LB5 -0.205  UB95 +0.004  sd 0.19  MDE80 0.17
+  I_interaction      mean +0.089  LB5 -0.095  UB95 +0.331  sd 0.39  MDE80 0.34
+  R_eval(data misfit, truth=x_G; secondary) mean -0.141  LB5 -0.231  UB95 -0.045  sd 0.17  MDE80 0.15
+  VERDICT (RND-J): V-INS TENTATIVE
+  stop-time labels (peak-PSNR gap | matched-fit gap): R0/free E(+0.51)|I(-0.33)  R0/noisy I(-0.07)|I(-0.29)  R1/free E(+0.25)|I(-0.39)  R1/noisy I(-0.13)|D(-0.42)
+  stop-time qualifier of the D cells (R1): CONFOUNDED {'R1/noisy': 'CONFOUNDED'}
+
+GAP OBS-J - IND1 (dB; BCa 90% two-sided = one-sided 95% bounds; D if UB<-0.25, E if LB>-0.25):
+  R0/free    mean -0.294  LB5 -0.516  UB95 -0.075  wins 1/8  sd 0.40  -> I
+  R0/noisy   mean -0.236  LB5 -0.682  UB95 +0.025  wins 3/8  sd 0.61  -> I
+  R1/free    mean -0.458  LB5 -0.757  UB95 -0.191  wins 2/8  sd 0.52  -> I
+  R1/noisy   mean -0.332  LB5 -0.737  UB95 -0.050  wins 3/8  sd 0.61  -> I
+  N_effect(noise)    mean +0.092  LB5 -0.110  UB95 +0.289  sd 0.34  MDE80 0.30
+  R_effect(rep+HF content) mean -0.130  LB5 -0.279  UB95 +0.018  sd 0.27  MDE80 0.24
+  I_interaction      mean +0.068  LB5 -0.142  UB95 +0.262  sd 0.37  MDE80 0.33
+  R_eval(data misfit, truth=x_G; secondary) mean -0.145  LB5 -0.287  UB95 +0.011  sd 0.27  MDE80 0.24
+  VERDICT (IND1): V-INS TENTATIVE
+  stop-time labels (peak-PSNR gap | matched-fit gap): R0/free E(+0.06)|I(-0.39)  R0/noisy I(+0.00)|I(-0.11)  R1/free I(-0.25)|I(-0.44)  R1/noisy I(-0.19)|I(-0.27)
+  stop-time qualifier of the D cells (R1): n/a {}
+
+GAP OBS-J - OBS-I (dB; BCa 90% two-sided = one-sided 95% bounds; D if UB<-0.25, E if LB>-0.25):
+  R0/free    mean +0.646  LB5 +0.421  UB95 +0.866  wins 7/8  sd 0.41  -> E
+  R0/noisy   mean -0.309  LB5 -0.688  UB95 -0.065  wins 1/8  sd 0.55  -> I
+  R1/free    mean +0.397  LB5 +0.004  UB95 +0.633  wins 7/8  sd 0.55  -> E
+  R1/noisy   mean -0.430  LB5 -0.774  UB95 -0.270  wins 0/8  sd 0.41  -> D
+  N_effect(noise)    mean -0.891  LB5 -1.074  UB95 -0.755  sd 0.29  MDE80 0.26
+  R_effect(rep+HF content) mean -0.185  LB5 -0.376  UB95 -0.065  sd 0.27  MDE80 0.24
+  I_interaction      mean +0.128  LB5 -0.094  UB95 +0.359  sd 0.42  MDE80 0.37
+  R_eval(data misfit, truth=x_G; secondary) mean -0.198  LB5 -0.385  UB95 -0.080  sd 0.27  MDE80 0.24
+  VERDICT (OBS-I): V-INS TENTATIVE
+  stop-time labels (peak-PSNR gap | matched-fit gap): R0/free E(+1.11)|I(-0.31)  R0/noisy I(-0.09)|I(-0.36)  R1/free E(+0.88)|I(-0.39)  R1/noisy I(-0.32)|I(-0.36)
+  stop-time qualifier of the D cells (R1): CONFOUNDED {'R1/noisy': 'CONFOUNDED'}
+
+GAP OBS-J - SPA-J (dB; BCa 90% two-sided = one-sided 95% bounds; D if UB<-0.25, E if LB>-0.25):
+  R0/free    mean -0.033  LB5 -0.357  UB95 +0.187  wins 3/8  sd 0.48  -> I
+  R0/noisy   mean +0.346  LB5 +0.220  UB95 +0.498  wins 8/8  sd 0.26  -> E
+  R1/free    mean -0.121  LB5 -0.284  UB95 +0.010  wins 2/8  sd 0.27  -> I
+  R1/noisy   mean +0.132  LB5 -0.062  UB95 +0.297  wins 6/8  sd 0.33  -> E
+  N_effect(noise)    mean +0.316  LB5 +0.085  UB95 +0.516  sd 0.40  MDE80 0.35
+  R_effect(rep+HF content) mean -0.151  LB5 -0.235  UB95 -0.066  sd 0.16  MDE80 0.14
+  I_interaction      mean -0.126  LB5 -0.444  UB95 +0.178  sd 0.57  MDE80 0.50
+  R_eval(data misfit, truth=x_G; secondary) mean -0.144  LB5 -0.235  UB95 -0.045  sd 0.18  MDE80 0.16
+  VERDICT (SPA-J): V-INS TENTATIVE
+  stop-time labels (peak-PSNR gap | matched-fit gap): R0/free I(-0.24)|E(+0.07)  R0/noisy E(+0.34)|E(+0.37)  R1/free I(-0.28)|E(+0.01)  R1/noisy E(+0.09)|E(+0.19)
+  stop-time qualifier of the D cells (R1): n/a {}
+
+Descriptive decomposition pairs (Q-AUC gap a - b, dB; no verdict):
+  RND-J - IND1   R0/free -0.42[-0.61,-0.22]  R0/noisy +0.15[-0.09,+0.35]  R1/free -0.43[-0.61,-0.22]  R1/noisy +0.11[-0.18,+0.41]  N_effectnoi +0.56[+0.32,+0.73]  I_interacti -0.02[-0.19,+0.09]
+  SPA-J - RND-J  R0/free +0.16[-0.26,+0.53]  R0/noisy -0.73[-0.99,-0.42]  R1/free +0.10[-0.14,+0.32]  R1/noisy -0.58[-0.83,-0.27]  N_effectnoi -0.78[-1.05,-0.53]  I_interacti +0.21[-0.10,+0.53]
+  OBS-I - IND1   R0/free -0.94[-1.18,-0.64]  R0/noisy +0.07[-0.13,+0.27]  R1/free -0.86[-1.24,-0.57]  R1/noisy +0.10[-0.10,+0.29]  N_effectnoi +0.98[+0.75,+1.23]  I_interacti -0.06[-0.24,+0.14]
+  OBS-J - SPA-J  R0/free -0.03[-0.36,+0.19]  R0/noisy +0.35[+0.22,+0.50]  R1/free -0.12[-0.28,+0.01]  R1/noisy +0.13[-0.06,+0.30]  N_effectnoi +0.32[+0.08,+0.52]  I_interacti -0.13[-0.44,+0.18]
+
+Supportive outcomes (OBS-J - RND-J):
+  peak|R0/free       mean +0.509  LB5 +0.248  UB95 +0.760  n=8
+  peak|R0/noisy      mean -0.071  LB5 -0.262  UB95 +0.159  n=8
+  peak|R1/free       mean +0.246  LB5 -0.054  UB95 +0.463  n=8
+  peak|R1/noisy      mean -0.132  LB5 -0.332  UB95 +0.009  n=8
+  end|R0/free        mean +0.501  LB5 +0.246  UB95 +0.751  n=8
+  end|R0/noisy       mean -0.579  LB5 -1.006  UB95 -0.239  n=8
+  end|R1/free        mean +0.235  LB5 -0.071  UB95 +0.459  n=8
+  end|R1/noisy       mean -0.668  LB5 -0.939  UB95 -0.361  n=8
+  Qedge|R0/free      mean +0.237  LB5 +0.015  UB95 +0.347  n=8
+  Qedge|R0/noisy     mean -0.180  LB5 -0.349  UB95 +0.021  n=8
+  Qedge|R1/free      mean +0.057  LB5 -0.101  UB95 +0.152  n=8
+  Qedge|R1/noisy     mean -0.257  LB5 -0.361  UB95 -0.152  n=8
+  Qblur|R0/free      mean +0.722  LB5 +0.132  UB95 +1.102  n=8
+  Qblur|R0/noisy     mean -0.156  LB5 -0.442  UB95 +0.055  n=8
+  Qblur|R1/free      mean +0.433  LB5 -0.080  UB95 +0.873  n=8
+  Qblur|R1/noisy     mean -0.049  LB5 -0.329  UB95 +0.175  n=8
+  O|R0/free          mean -0.152  LB5 -0.242  UB95 -0.056  n=8
+  O|R0/noisy         mean -0.202  LB5 -0.267  UB95 -0.155  n=8
+  O|R1/free          mean -0.124  LB5 -0.206  UB95 -0.060  n=8
+  O|R1/noisy         mean -0.244  LB5 -0.325  UB95 -0.190  n=8
+  Qfit4|R0/free      mean -0.203  LB5 -0.436  UB95 -0.076  n=8
+  Qfit4|R0/noisy     mean -0.270  LB5 -0.580  UB95 -0.103  n=8
+  Qfit4|R1/free      mean -0.233  LB5 -0.442  UB95 -0.093  n=8
+  Qfit4|R1/noisy     mean -0.236  LB5 -0.478  UB95 -0.091  n=8
+  Qfit1|R0/free      mean -0.333  LB5 -0.589  UB95 -0.071  n=8
+  Qfit1|R0/noisy     mean -0.312  LB5 -0.503  UB95 -0.098  n=8
+  Qfit1|R1/free      mean -0.395  LB5 -0.560  UB95 -0.206  n=8
+  Qfit1|R1/noisy     mean -0.489  LB5 -0.766  UB95 -0.290  n=8
+  nf|R0/noisy        mean +0.011  LB5 +0.008  UB95 +0.015  n=8
+  nf|R1/noisy        mean +0.015  LB5 +0.011  UB95 +0.019  n=8
+  mf|R1/free         mean +0.036  LB5 -0.007  UB95 +0.111  n=8
+  mf|R1/noisy        mean +0.052  LB5 -0.003  UB95 +0.122  n=8
+  proj|R0/free       mean +0.129  LB5 -0.163  UB95 +0.279  n=8
+  proj|R0/noisy      mean -0.381  LB5 -0.638  UB95 -0.141  n=8
+  proj|R1/free       mean -0.037  LB5 -0.283  UB95 +0.086  n=8
+  proj|R1/noisy      mean -0.498  LB5 -0.630  UB95 -0.354  n=8
+  logWpeak|R0/free   mean -0.012  LB5 -0.051  UB95 +0.001  n=8
+  logWpeak|R0/noisy  mean -0.176  LB5 -0.315  UB95 -0.089  n=8
+  logWpeak|R1/free   mean -0.017  LB5 -0.032  UB95 -0.005  n=8
+  logWpeak|R1/noisy  mean -0.237  LB5 -0.376  UB95 -0.079  n=8

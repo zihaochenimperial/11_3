@@ -1,0 +1,16 @@
+GEO K1 FREEZE RECORD (append-only) written 2026-11-08T01:22Z (date -u)
+FROZEN_GEO_CONTRACT_v2.md sha256 BEFORE K1 append: 1f79ed05917c9f1951ab7aee633c3e0717b914cab42b45608350269371e4ef74 (original frozen 2026-11-06T06:38:08Z; GEO_CONTRACT_v2.sha256 holds the CANDIDATE sha 18aa67b4...)
+K1_FINAL_20261108.md sha256: 49e38876433034987893869f96f272fa7d302c7b6f3583a18c6e3f58790a0035 (appended verbatim to FROZEN_GEO_CONTRACT_v2.md)
+core-v0 archived at research/frozen/geo_core.core-v0.py sha256 1044a3f84093a9faa94d331b25f1d7dc0edf7fdb0ca045d98c95f37308d5983b
+e92732df923456bb8def96978304184752a00d58b897e4545abd43210c15fbc4  src/geo_core.py
+076a0a61a5711df93236e04217114631747d43ade2713778a11cab4fa55d7bd3  src/geo_flops.py
+93f42252e3377a11e538d5361b7225ed766422b267d2019eb18bcce8d8eefeda  src/geo_gen.py
+af9d525d7740022ebb423222f2b34e09b32bd949a810e3b412dcf503e74dc0f9  src/as_core.py
+e5d086786c0e042243f1466680d3e12188469dd0ad4ffc70b7e5aef670363d59  src/as_gen.py
+67e33353eff1e06f7e7fdda059bd0dc732c7873ddcf9a5e5fa857f53bfebc1ca  tests/test_geo_core.py
+55a75a860bf5f87a2e6ab90707a94d33eab9ebda330e93c1270cb1cf1114151b  experiments/geo_run.py
+c82382c4ac09ca501f381492cfa55cfc92cee03f7dc5ac6c719fd32fc3b4d6f7  experiments/geo_analyze.py
+5726d9b790470d9ee0aecd0be252eafccc4f4fe024f4622738c0ff8caf43c98e  experiments/geo_L.py
+abfd33eca49e8859bcf4a242774de59fba5a22b3e60bc340e0f587a7d5c959d8  experiments/geo_vtests.py
+
+K2 appended 2026-11-08T03:24Z (date -u): K2_FINAL_20261108.md sha256 c8985c503ada38c188014f455f6ca4c7a8fdc821d8c2277e2dd612f75b4a243b; geo_analyze_unexp.py sha256 30602d09dff634cc919b776e6f8297e827a8a4075ed91abf57938bc5a6d0666a; geo_analyze.py unchanged c82382c4ac09ca501f381492cfa55cfc92cee03f7dc5ac6c719fd32fc3b4d6f7; outputs/GEO-H absent/empty at this time

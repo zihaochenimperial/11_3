@@ -1,0 +1,32 @@
+# CA freeze record (gate-format registration lines start at column 0; no timestamp prefix on them)
+FREEZE 2026-11-09T05:26:52Z contract=contracts/CA_CONTRACT.md (v1)
+CONTRACT_SHA256 5873c208bc7950df28e42490ae23866b2c07836ebf833f2596af1364c44979e1 contracts/CA_CONTRACT.md
+DEV_DONE 2026-11-09T05:26:52Z DEV 801-808 pilot block P (640 runs), DEV block A (128 runs), DEV block S image 803 timing (48 runs), SMOKE 890-892; none is evidence
+MODULE_SHA256 e5d086786c0e042243f1466680d3e12188469dd0ad4ffc70b7e5aef670363d59 as_gen.py
+MODULE_SHA256 b90d82b4960bf493ae7bacf7ad1f08ed484534eb9eeae058c1020be6154fe4da ca_diag.py
+MODULE_SHA256 9db795c915d137e44c42d8626b80d7b5f33bfef314209d9e667e2eb340a0aa54 ca_gen.py
+MODULE_SHA256 e92732df923456bb8def96978304184752a00d58b897e4545abd43210c15fbc4 geo_core.py
+MODULE_SHA256 076a0a61a5711df93236e04217114631747d43ade2713778a11cab4fa55d7bd3 geo_flops.py
+MODULE_SHA256 1f3690452148eba8caa272a85e605bf3db438a91f6586a0990e8640f070ec725 jr_core.py
+MODULE_SHA256 406ee2c895204c3762713bc146aec212a87b05d746639e279c7a32c5060009f1 jr_op.py
+ANALYZER_SHA256 90ec6036d46529b6144d78705a35d5822ef7ae9fdd95f6ed01cbb8a4ae69cdd2 ca_run.py
+REDUCER_SHA256 ee1692c758c7c5ee998d2b7c50c55df8b72eff037e1abbdad6b87b9e09a7e104 ca_reduce.py
+REFERENCE_SHA256 e9da8191d3be1a753203b41286d099ca2a888b67129a68a7ca18c5cd517597ea trn_same_state_reduce.py (bca)
+DIAG_SHA256 0932475c38bba6d87066fbeabe43a85f1fc0a574dd0ac44e5988b56aa81046ea ca_diag_run.py
+TEST_SHA256 9875d8ac2a15efba5f12efc68b147f978806e4232663ee3f2ba13272938234bb tests/test_ca.py
+GENERATOR_FINGERPRINT_SRC e17d51e6b4707419a96b9d535573df449416230a7bf2c3ce00ef5a2bfcb2eec6 (functions _line,_tile_lines,_confetti,level_of,sharp_image,_starts,kfit,noise_of,observe,make_op,psnr)
+GENERATOR_FINGERPRINT_IMAGES 08d0bb1cb28e0be9a934722c5f84ee30af9be8292702c288b42699afcd266d1b (open index sets, n=31)
+GENERATOR_CONSISTENCY cached_fits=14 inconsistent=0
+CHRONOLOGY dev_fits_first 2026-11-09T03:18:33Z last 2026-11-09T03:40:09Z (n=11)
+CHRONOLOGY dev_pilot_blockP_runs_first 2026-11-09T03:41:49Z last 2026-11-09T04:45:49Z (n=640)
+CHRONOLOGY pilot_first_run_after_last_fit True
+NOTE OPUS_REVIEW v0 reviewed by real Opus 5.5 (runlog 20261109T044837Z-model-call-dd02): not freezable until R1-R8; all R1-R11 adopted in v1 (contract section R). Opus said no re-review was needed after R1-R8; a light confirm-or-flag check of v1 was nevertheless run (runlog 20261109T052141Z-model-call-a7f0): verdict 'can freeze' with 5 small changes, all adopted (contract section R, second table); that check is NOT a full re-review of v1. Verbatim: research/notes/OPUS_CONFIRM_CA_CONTRACT_v1_20261109.md.
+NOTE CAP_UNITS Opus text 'P+S <= 5 CPU-h' was unit-ambiguous; read as 5 two-core wall hours (measured P+S estimate 6.7 core-h): caps P 6.0 + S 3.5 core-h; X 3.0 core-h (Opus confirm check). Opus accepted this reading.
+NOTE SEALED_SET CONFIRM 811-826 was never read before this record (no CONFIRM image generated, no consumption line in any record; gate tests used temporary records only). VERIFY2 701-712 and old confirm sets 321-344/401-424 stay sealed.
+NOTE RUN_COMMAND CA_CONFIRM_UNLOCK=1 python3 experiments/ca_run.py --stage confirm --blocks P,S,X --workers 2 (single gate consumption; crash recovery only with a logged CONFIRM_RESUME_OK line).
+CONFIRM_UNSEALED 2026-11-09T05:26:52Z CONFIRM 811-826 may be read once by experiments/ca_run.py (registered shas above) under the human authorization of 2026-11-09 (Codex-relayed; memory/AUTHORIZATIONS.md) after the real Opus gate
+CONFIRM_CONSUMED 2026-11-09T05:27:25Z pid=2257 sha=90ec6036d46529b6144d78705a35d5822ef7ae9fdd95f6ed01cbb8a4ae69cdd2
+CONFIRM_RESUME_OK 2026-11-09T07:27:47Z resume #1: the harness background-time limit (7200000 ms) killed the sealed run at about 07:27Z (start + 7200 s) after 1044 of 1280 block-P runs (planning error: the run needs ~4.5 h wall, the longest allowed background command is 2 h); no result was reduced or viewed; same command, same registered shas, no change of scope/parameters; finished runs are kept and skipped (atomic JSON writes); a second resume is expected for block X
+CONFIRM_CONSUMED 2026-11-09T07:27:54Z pid=2906 sha=90ec6036d46529b6144d78705a35d5822ef7ae9fdd95f6ed01cbb8a4ae69cdd2
+CONFIRM_RESUME_OK 2026-11-09T09:28:25Z resume #2: the harness background-time limit (7200000 ms) killed resume #1 at about 09:27Z (start 07:27:54Z + 7200 s) after blocks P (1280/1280) and S (768/768) were complete and block X had 10 of 64 runs; no result was reduced or viewed; block X is unconditional (contract R6), so it is completed BEFORE any reduction of P or S to avoid deciding on X after seeing P/S; same command, same registered shas, no change of scope/parameters; relaunched with a 5400000 ms limit because the remaining ~54 X runs need about 1 h
+CONFIRM_CONSUMED 2026-11-09T09:28:25Z pid=3562 sha=90ec6036d46529b6144d78705a35d5822ef7ae9fdd95f6ed01cbb8a4ae69cdd2

@@ -1,0 +1,34 @@
+RJ_CONTRACT_FROZEN 2026-11-08T13:04:45Z sha256 876b6114ba0df8a7fc65cadfde703a2ee2bc22c83c9e06b60509aefb3cdca35b contracts/RJ_CONTRACT.md (v1; supersedes candidates v0, v0_1)
+AUTHORIZATION basis: human 2026-11-08T09:02Z relay (Codex) + project-description main line; SendUserMessage 2026-11-08T12:32Z reported RJ-1 (WAKES 12:31:26Z); the human can stop with the word 停. No new human message since. Owner run 20261108T090408Z-experiment-f602.
+OPUS_REVIEW run=20261108T125053Z-model-call-ef21 model=claude-opus-5-5 verdict=PASS-WITH-CHANGES R13-R24 all applied; archived research/notes/OPUS_REVIEW_RJ_CONTRACT_v0_1_20261108.md; Opus: no re-review needed after the edits
+MODULE_SHA256 5fc848a57269bd7a5f0132435c07cf19ef97cbe7f91da40e986a335f91d37e46 src/rj_loop.py
+MODULE_SHA256 0348466706b118632ede76cd91a7772d72f7b3a70d5d6939fc5720ff694fe55f experiments/rj_run.py
+MODULE_SHA256 670772e1326b13cf834b23c29200e710dd207eb915320ac374d5789f9c0dd5cf experiments/rj_reduce.py
+MODULE_SHA256 592176bcb0b27bdc0b2183bfdbafa92e8167a63a6a216decd2a920a8188c2de2 experiments/rj_fref_chk.py
+MODULE_SHA256 68a5eb2a5055ef4188e822eab562a6b3816e941a656f996ab9dd06647ee0a242 tests/test_rj_loop.py (9 tests pass at freeze)
+FROZEN_DEP_SHA256 8a2fd48e7060cf65c4bcb7ae70505e7cbb025d6aee41674cdb5f57524fcbaa77 src/trn_loop.py (unchanged since TRN freeze)
+FROZEN_DEP_SHA256 6ba4c648450df30387383be11092114cc31f54a39b27de0cc7ec667002376896 src/trn_gen.py
+FROZEN_DEP_SHA256 e92732df923456bb8def96978304184752a00d58b897e4545abd43210c15fbc4 src/geo_core.py
+FROZEN_DEP_SHA256 076a0a61a5711df93236e04217114631747d43ade2713778a11cab4fa55d7bd3 src/geo_flops.py
+FROZEN_DEP_SHA256 84257ea0b28c0c80e422250fa8897a1092dc043de724628d010621a29512e15a src/trn_flops.py
+FROZEN_DEP_SHA256 a8ef07b959e8577852f23412008b7789ec09c385138d3cec504f9095067a0522 experiments/trn_s0.py
+FROZEN_DEP_SHA256 e9da8191d3be1a753203b41286d099ca2a888b67129a68a7ca18c5cd517597ea experiments/trn_same_state_reduce.py
+FROZEN_DEP_SHA256 818f082e3da4395abdde80c6d31b402e847d28f099932bd79c01ed1875a2c20f outputs/TRN-S0/fref_table.json (dev-sel F_ref)
+DESIGN_PHASE_DISCLOSURE only dev-sel image 301 was used for design probes before the freeze (see contract section 4b); no confirm image 321-344 / 401-424 generated or read.
+CONFIRM_NOT_USED contract RJ v1 has no confirm access; no ANALYZER_SHA256 / CONFIRM_UNSEALED line is written for RJ.
+TUNE_START 2026-11-08T13:04:45Z shards=2 pids=4499 4500 
+AMENDMENT_A1 2026-11-08T13:50:25Z sha256 5598e385417dc3141ada975162e22e4c4702593eecaad5a89863ce7f4bae0c87 contracts/RJ_AMENDMENT_A1.md (RJ_CONTRACT.md sha 876b6114… unchanged; A1 overrides: outer cap 400, R26-R29, C/X reuse replacement). Proposed after tuning (516 runs) and before any eval/oracle run; Opus consult run=20261108T134717Z-model-call-bdce verdict ACCEPT-A1 + R25-R29. The A1 rerun processes were started 2026-11-08T13:49:38Z, i.e. after Opus consent and before this line was written.
+MODULE_SHA256_A1 15ca107f5ad3b67ced4634dea34c0d35b917116d77c5298d49959c64cb1f8694 src/rj_loop.py (supersedes 5fc848a5…)
+MODULE_SHA256_A1 387542bd5aecdf7973b794f9b642ba9bf14fa5aec27b135caa20dc67bc4e6a37 experiments/rj_run.py (supersedes 03487…)
+MODULE_SHA256_A1 dbd4898f7d7d9639cacaaf2f9f5db7e943c1b92c2722c6263c1475f8ab9e0af3 experiments/rj_reduce.py (supersedes 670772e1…)
+MODULE_SHA256_A1 5691bcfb6c64493814296080b26be9fc49fa8bb64df4b32c07c69bcd4a74cd18 tests/test_rj_loop.py (10 tests pass; supersedes 68a5eb2a…)
+TUNE_CAP200_RESULTS archived: outputs/RJ/runs_cap200 (90 max_iter runs), outputs/RJ/runs_failed_reuse (60 runs of replaced reuse configs), outputs/RJ/tune_REDUCE_cap200.json; tuning CPU-h at cap 200 = 1.24
+EVAL_DET_DONE 2026-11-08T14:28:31Z 108 new runs (9 configs x 301-312 x C1,C4 at outer cap 400); rj_reduce --stage sc: SC = D_t0.1_e0.1 (median W_sp 6.10e9) with censoring 4/24 = 16.7% > 10% => by the frozen rules Gate O is mechanically INCONCLUSIVE(censoring>10%) and the terminal action is STOP; best eligible control (censoring<=10%) = X2_g1.5_m16 (median 7.32e9, censor 0). No oracle/eval_orc run existed yet at this line.
+CLARIFICATION_C1 2026-11-08T14:28:31Z (no rule or verdict change): eval_orc additionally runs the three oracle arms composed on the eligible control X2 (descriptive Gate O-elig, per Opus Q2 'other computation the same'); the formal Gate O verdict stays INCONCLUSIVE regardless of the readings. Files: experiments/rj_run.py, experiments/rj_reduce.py.
+MODULE_SHA256_C1 443286fdcbf6aa4c9cb92e4bb21fd38ef33427e0de657a981aa4faffe7097015 experiments/rj_run.py (supersedes 387542bd…)
+MODULE_SHA256_C1 10e81497e0aea96e7dbbfe052136c476be6eff5d5a4dc430576dd997eb03462e experiments/rj_reduce.py (supersedes dbd4898f…)
+EVAL_ORC_START 2026-11-08T14:28:31Z shards=2 configs=9 (3 oracle + OS on SC, OKdF/OS on B0, 3 oracle on eligible control) x 24 problems; CPU cap 6h (wall x 2 procs)
+MODULE_SHA256_C1b 2026-11-08T14:29:39Z 37f9bd206a80119a3e6d217b8b00a991378f4cb8a29fe7d5cde81442eb98f5aa experiments/rj_run.py (print-only fix: oracle runs have wall=None; 2 oracle runs written before the crash are kept; no logic change)
+
+2026-11-08T16:20:16Z EVAL_ORC_DONE runs=840/840 (216 oracle jobs; 3 processes at the end: shard0, shard1, helper for OKSb@X2 C4 310-312, same code)
+2026-11-08T16:20:16Z GATE_STAGE rj_reduce.py sha256=10e81497e0aea96e7dbbfe052136c476be6eff5d5a4dc430576dd997eb03462e -> eval_REDUCE.json sha256=caa171f6291d842b05886cff592f9a29a364cc8f82f40d1af648a7f0717d8ff3 sc.json sha256=9d40d263fd56273ce68a9d19df4aea68114077c4fc60d2cd172be49fccea3538 ; gate_O=INCONCLUSIVE(censoring>10%) gate_arm=OKb@D_t0.1_e0.1 R_median=1.023 gate_T=deterministic_captures(L_SC=0.743,L_OK=0.848) quality_warning=True ; terminal: STOP (no estimator appendix, no chk, no confirm); FAILURES FAIL-0034

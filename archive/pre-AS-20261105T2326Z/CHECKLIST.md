@@ -1,0 +1,57 @@
+# Gaussian checkpoints (证据 = runs/ 或 queue/ 路径; [x]=已验收, [~]=部分, [ ]=未做)  更新 2026-11-05T11:06:39Z
+- [x] D:/Gaussian 建立; 12 份研究记录带导入哈希 (archive/import-manifest.json); 旧草稿归档
+- [x] 补迁 5 份原始 Claude/Codex 审查, 源/目标 sha256 一致 (archive/legacy-reviews/import-manifest.json)
+- [x] Sonnet/Opus/OpenCode 角色与 no-Codex-research 规则 (AGENTS.md); 真人升级规则已写入; Codex 仅有真人授权的只读监督例外 (memory/CODEX_MONITOR_ZH.md)
+- [x] Claude App 目录绑定, 首任务接受, 读写实测 (runs/20261105T073330Z-takeover-b7d3); 勿重复
+- [x] OpenCode 真实连接: GLM-5.3-Flash 与 Kimi K2.7 Code 经 run-worker.ps1 真实回复 (首败=启动器缺陷 PS5.1 ProtectedData, 已修, 原件在 archive/codex-originals/); serving-model 无权威字段, 仅"配置+响应自述"
+- [x] 五槽启动器争用: 6个同时探测 -> 恰好5个拿槽, 第6个被拒 (queue/done/j03-contention6.result.json); 注意: 不是5个并发研究 agent 的验证
+- [~] "默认2/不递归": 默认2由 pump -MaxConcurrent 2 实现; 不递归仅靠提示+权限, 无机械证明 (限制已记录)
+- [~] 执行定时任务 trig_<redacted>: 配置 PASS; **真实唤醒 PENDING** (首次 2026-11-05T08:38Z; 验收 = list_triggers.last_run + memory/WAKES.md run_id 行)
+- [~] Codex 监督 heartbeat gaussian-claude-90 (真人授权, 每90分钟, 只读): 已创建; 首次自动审计未验证; 不重复创建
+- [x] 前期调研接收回执: research/notes/PRIOR_RESEARCH_RECEIPT_20261105.md (本地全文已读 / 一手论文工具摘要级 / 未读 分级; 主线=候选, 非已证贡献) + run 20261105T074518Z-infra-0001 事件
+- [x] 项目重构第一轮 + 统一 memory (INDEX/STATE/DECISIONS/NEXT) + 文献导入; Codex 07:50 同步内容已并入 (本次)
+- [x] pump v2 功能验收 (heartbeat v2 + startup.log + hostinfo j08, 08:00Z) 并已升级 v3 (加 pyinstall, 08:05Z 经 queue/RESTART 自动重启, 心跳 v3 pid 44664); 备份 archive/pump-versions/host-pump.v2.ps1
+- [x] 宿主 Python 3.12.10 (python.org 安装包 26964224 B, sha256 67B5635E..., Authenticode Valid/PSF, 装至 D:\\Gaussian\\.tools\\python312, 无 PATH/启动器/关联改动; 真人 08:03Z 授权此类安装由我执行) + .venv: numpy 2.5.4, scipy 1.18.1, pytest 9.2.0, pillow, matplotlib 3.11.2, pandas 3.1.1, torch 2.15.0+cpu (14线程, 无CUDA); 证据 runs/*host-pyinstall-8b4c, *host-venv-3ddf, *host-pip-*, *host-py-2dc5
+- [ ] GPU 版 torch (cu121) — 仅在 GPU 门前, 需另建 venv 或经 pump 扩展; 现 .venv 为 CPU 版
+- [ ] 完整的逐调用前瞻日志 (派发前建 run; 现有宿主记录为事后 ingest)
+- [~] G0 最近邻矩阵: S1-S7 摘要级; 新增 Jo2021(摘要级)、Gao&Jojic 2016(全流程扰动+重训, 摘要级); Janson2015 前半(工具摘要级, S10)、Friedman1991 仅二手(pyMARS 文档, 原文未读, S11) 已追加; Ye1998(仅二手: Hauenstein2018 复述, S12)/Efron2004(仅讨论+答辩开头, 主文未取到, S13) 已追加但原文均未读; Feng/Kao 版本存疑; GLM 侦察 002b 完成(抽查属实)、001b exit1 但有报告(部分核对)
+- [x] G0.3 缺口陈述 v0->v1 (research/nearest_work/G0_GAP_STATEMENT.md; T3 已是已知结果, 原创性判断下调为"低"); 阅读未完的文献按"有先例"保守处理
+- [x] G1 理论 v1 + F0 合同 **v2 冻结** (2026-11-05T08:33:33Z): contracts/F0_CONTRACT.md, sha256 8c563f0296376d41e2ca47608bbc9208873f3cb4a809316002d52feb37ff7f25 (contracts/F0_CONTRACT.sha256); 依据 Opus round-3 FREEZE-AFTER-CHANGES(C1-C3) 已逐字落实。注意: 这只冻结了**预注册合同**, 没有任何实验结果, 0 个已验证创新
+- [x] 真实 Opus5.5 合同门 3 轮 (Agent model=opus, 自报 claude-opus-5-5): r1 REVISE (b2de), r2 ACCEPT-WITH-CHANGES R1-R9 (d440), r3 一致性确认 FREEZE-AFTER-CHANGES C1-C3 (ccde); 全文 research/notes/OPUS_REVIEW_F0_v0/v1/v2_20261105.md。**未完成**: 实验结果出来后的 go/revise/stop 门 (需再次 Opus) 与 headroom 决定
+- [~] G2 CPU 代码/独立评测器 (2026-11-05T08:41:06Z): runner experiments/f0_run.py 与分析 experiments/f0_analyze.py 已按冻结合同写成并用玩具模型自测(experiments/f0_analyze_selftest.py, 非证据); 宿主单测脚本 scripts/run_unit_tests.py; Kimi src+tests (task 003c) 运行中 (run 20261105T084012Z-opencode-worker-9421, j18; j17 因启动器命令行过长失败, 非模型失败); 待: 宿主单测(V1) -> GLM 审计(tasks/004) -> pilot。尚无任何真实实验结果
+- [x] G2 代码+宿主单测 (V1): 18 passed (outputs/unit_tests_status.json, run 20261105T094452Z-host-py-d13b); GLM 窄审计 004c 6 项 ok + 偏差 D-01 已登记 (research/notes/scout_004c_audit_raw.md)
+- [x] v2 pilot: p1 (torch) 1800s 墙钟中止 (成本证据); p2 (fast) 完成, 判 INVALID(R7) (估计量不可识别, 非假说判决; outputs/F0-pilot-p2fast)
+- [x] Opus 门 round 4 REVISE-v3 (66bb) + round 5 FREEZE-AFTER-CHANGES C1-C4 (5c5a): 合同 **v3 冻结** sha256 85328d4e9c20b41af3aabfd329d6dd4f561f95a1335357e5788c19294bb699d3 (contracts/F0_CONTRACT_v3.md); 全文 research/notes/OPUS_REVIEW_F0_pilot_20261105.md / OPUS_REVIEW_F0_v3_20261105.md
+- [x] v3 代码+V1: f3_run.py/f3_analyze.py/tests/test_f3_units.py; 宿主单测 39 passed (outputs/unit_tests_status.json, run 20261105T102339Z-host-py-b2af); 变异检查通过; GLM 窄审计 004e 7/7 ok (research/notes/scout_004e_audit_raw.md)
+- [x] v3 debug smoke (非证据, DEBUG-F3-pilot-smoke1) 走通 runner+分析全路径
+- [x] **v3 pilot p1 完成**: 全部有效性闸门+P1+P5 通过 -> PROCEED Stage 1 --M=32 (j41/j42; outputs/F3-pilot-p1/ANALYSIS.md); pilot sdf 数仅为探索量级 (E1 35.6±3.2, E2 31.2±3.8), 不是 H1 证据
+- [x] **v3 Stage 1 完成** (j44; outputs/F3-stage1-s1): 合同字面分析 (j46) H1 HOLDS (pooled sdf(1024)=27.6, 阈值 19.1, 12/12 正); 启动版分析 (j47) NOT JUDGED (D-03 两道合同外闸) -> 待 Opus 一致性裁决。H1 成立=development 证据, 不是原创性结论
+- [x] Opus 门 (run 20261105T122958Z-opus-review-4b76, claude-opus-5-5): D-03 -> 合同字面版为准 (H1 HOLDS 须带 D-03 标注); **H2 (sdf 修正决策) = STOP, 不起草 H2 合同**; 新增 D-04 (8 workers vs 合同 4 进程, 只影响墙钟)。采纳: 估计量/修正主线 STOP, 保留 development 证据与可选已知方法基准
+- [x] 真人决定 (17:57 London, 已落盘 2026-11-05T18:02:24Z, run 20261105T175811Z-session-6e38): 选 (3) 以"交叉拟合 birth 选择"重开 G0 作新主线; 要求所有失败写 log。旧"等待真人选路"状态已取消 (历史保留于 memory/DECISIONS.md)
+- [x] M0 新 run {RUN} + 会话锁 + 授权/读取回执; memory/FAILURES.md 建立 (FAIL-0001..0009, 含 F0/H2 STOP 与长期规则)
+- [x] M1 同步 AGENTS/CLAUDE/MISSION/PLAN/START_HERE/CHECKLIST/STATE/NEXT/TASKS/ledger 完成 (2026-11-05T18:04:00Z); 两小时 trigger prompt 已更新为读新主线+FAILURES.md (只更新, 无新建; 18:38Z 唤醒行为待核对)
+- [x] M2 新 G0 v1 完成 (2026-11-05T18:11:35Z): research/nearest_work/G0_CF_BIRTH_NEAREST_WORK_20261105.md + 阅读日志 C1-C13 (摘要级居多, 标注); 结论=方法级不新, 价值=位置轴实证边界
+- [x] M3 设计完成 (2026-11-05T18:11:35Z): research/notes/CF_BIRTH_DESIGN_20261105.md (proposed)
+- [x] M4a 真实 Opus 审查 round 6 (run 20261105T181102Z-opus-review-5134) = REVISE (2026-11-05T18:15:51Z); 原文 research/notes/OPUS_REVIEW_CF0_DESIGN_20261105.md; FAIL-0010
+- [x] M4b 真实 Opus round 7 (run 20261105T182355Z-opus-review-a490, 自报 claude-opus-5-5) = FREEZE-AFTER-CHANGES (2026-11-05T18:30Z; 非假说通过); 原文 research/notes/OPUS_REVIEW_CF0_CONTRACT_20261105.md; FAIL-0012; edits 1-7 已吸收 (偏差: 两次查看各 alpha/2, 已登记 DECISIONS)
+- [x] M5 冻结 2026-11-05T18:38:48Z: 合同 contracts/CF0_CONTRACT.md sha256 11d1fc81…; 冻结文件清单 contracts/CF0_FROZEN_FILES.sha256 (13 文件) sha256 963b39bd…; 记录 contracts/CF0_FREEZE_RECORD.txt; 宿主单测 j54 32 passed; 新图 E15-18 (pilot) / E21-38 (dev) / E41-58 确认集保留未触; 不得用 E1-E14/W0/W1 做确认
+- [x] M6 (完成, 结果 STOP / FAIL-0013) 有界 CPU 预实验 (单变量 autoresearch) -> go/revise/stop; GPU 仅 headroom+空闲检查+合同之后。M6a pilot p1 完成 (PILOT_OK, V0-V8 全 true; manifest 摘要 872dc35e…) -> M6b dev --M=32 (host job j62 于 18:49:18Z 起; 实测 6 worker 每单元中位 82 s, 预计总墙钟 ~2.4 h < 3 h 上限) -> 判定 GO-dev/STOP/INCONCLUSIVE (一次 dev_ext)
+- [ ] 新主线机制 headroom 的 go/revise/stop 决定 (Codex 监督结束条件之一; F0/H2 的 STOP 已有: FAIL-0001)
+- [ ] GPU 门 (空闲检查+单卡锁+合同+headroom) 之前不做任何 GPU 试验
+- [x] M6c 真实 Opus round 8 (run 20261105T211139Z-opus-review-f986) = A (关闭 CF0; STOP 有效稳健); FAIL-0013 附记 A1; 负结果记录 v2
+- [ ] M7 汇报真人 + 等待方向决定 (暂停新线实验; K 轴基准须真人批准 + 新 G0 + 新图 k>=61)
+
+## RE (重新 vibe idea, 2026-11-05T21:34Z, run 20261105T212439Z-session-2c28)
+- [x] RE-0 新 run + 解除旧"等待选路"状态 (真人 21:24 London 授权)
+- [x] RE-1 一手原文取文通道测试 (shell->arXiv 403 缺口; 内置浏览器读 ar5iv HTML 可用; L4: Tibshirani 2015, Oliveira-Lei-Tibshirani, Leiner et al.)
+- [x] RE-2 FAILURE_CAUSAL_AUDIT_20261105.md 交付真人 (Sonnet 起草; 待 Opus)
+- [x] RE-3 候选简报 v2 REIDEA_CANDIDATES_20261105.md (A'/C'/B/D/E; 最近邻等级已按 Opus 下调; Rabbit 记缺口; 22:15Z)
+- [x] RE-4 真实 Opus round 9 (claude-opus-5-5, run 20261105T220104Z-opus-review-f8b0) verdict NARROW; 原文 OPUS_REVIEW_REIDEA_20261105.md; 审计 v2/候选 v2 已并入; FAIL-0016
+- [~] RE-5 唯一推荐 A' (NARROW) + M0-M5 已写; 进行: M0 精读 / M1 补全 (纸面); 实验类步骤 (M2b/M3/M4/M5) 须新合同+Opus+冻结; E41-58 封存
+- [x] RE-6 (部分) memory/TASKS/INDEX/DECISIONS/NEXT/STATE + 既有 trigger prompt 已更新 (enabled=false 未动); PLAN 末节待写
+- [x] RE-7 自核验 (非实验, 22:13Z): 半群数值成立; M2 描述性 (RAWcv=92.2% oracle 增益, oracle 仅多 2.8pp, K 轴=类型识别); research/notes/REIDEA_M1_M2_CHECKS_20261105.md
+- [ ] RE-8 M0 精读 (SFW 全文/Duval-Peyre/Azais/Butucea/ADCG/CL-OMPR/Image-GS/Kac-Rice/OMP-discrepancy) -> 回执+G0 追加
+- [x] RE-9 M0 部分精读 R10-R14 (Azais/Butucea/SFW补/PKP/Giard 2025) + 粗算 §C (22:21Z)
+- [~] RE-10 Opus round 10 决策门 (run 20261105T222118Z-opus-review-8d5e) 进行中
+- [x] RE-10 Opus round 10 决策门完成 (建议: 如实报告缺乏新意; 条件 A''); 简报 v3; FAIL-0017
+- [ ] RE-11 真人决定: 关闭 A' / 继续 A'' / 另选问题空间 (未回复前不启动 M2b)

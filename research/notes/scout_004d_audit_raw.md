@@ -1,0 +1,7 @@
+# GLM result-auditor 004d raw final text (unverified worker output)
+
+CHECK: ok (gsfast.py:109 / gsfit.py:219-222 鈥?both omega_rng(omega,0), rng.random((K,2)) then 0.5+0.05*rng.standard_normal(K), plus logscale=full log(init_scale_px), rot=0, in that order)
+CHECK: ok (gsfast.py:96-104 / gsfit.py:153-176 鈥?both perm=omega_rng(omega,1+r).permutation(N)[:S], gaussian_filter(y-f_cur, sigma=cfg.smooth_sigma_px, mode='reflect'), argsort(-|sm[cand]|, kind='stable')[:births_per_round] then np.sort, xy=(cols+0.5)/W,(rows+0.5)/H, logscale=log(birth_scale_px), rot=0, val=f_cur.ravel()[chosen]+sm.ravel()[chosen])
+CHECK: ok (gsfast.py:98-104 / gsfit.py:160-161 & 246 鈥?both set chosen=np.asarray(forced_idx,int64) with no extra RNG draws beyond the unconditional perm, and both initialise val from f_cur+smoothed residual at those indices; indices used unchanged, non-permuted)
+CHECK: ok (gsfast.py:80-81,117,123 fresh Adam per stage, b1/b2/eps=0.9/0.999/1e-8 lines 70,76-77, lrs=_lrs(cfg) line 90-91; gsfit.py:231,260 fresh torch.optim.Adam per stage with per-group lrs lines 99-102, default betas/eps; both cfg.steps_per_stage; non-finite loss/params raise gsfast.py:84,87 = gsfit.py:123-129; no clipping in either; numpy replica's bias-corrected denom matches torch Adam's step_size/denom formulation)
+CHECK: ok (gsfast.py:3-10 imports only numpy/scipy/src.f0_config/src.omega/src.gskernel; gskernel.py:4-5 numpy only; grep for synth/reference_eval/load across the three files: no matches)

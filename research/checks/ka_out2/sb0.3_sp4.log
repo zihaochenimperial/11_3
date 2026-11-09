@@ -1,0 +1,20 @@
+seed 0 stat=2.72e-09 t=5s all-eff raw_free=1.00/B joint_free=1.00/B raw_c1=1.00/B block_c1=1.00/B joint_c1=1.00/B
+seed 1 stat=4.85e-06 t=10s all-eff raw_free=0.53/B joint_free=0.53/B raw_c1=0.53/B block_c1=0.53/B joint_c1=0.53/B
+seed 2 stat=2.83e-10 t=14s all-eff raw_free=1.00/B joint_free=1.00/B raw_c1=1.00/B block_c1=1.00/B joint_c1=1.00/B
+seed 3 stat=6.25e-10 t=19s all-eff raw_free=0.87/B joint_free=0.87/B raw_c1=0.87/B block_c1=0.87/B joint_c1=0.87/B
+seed 4 stat=1.43e-04 t=23s all-eff raw_free=0.98/S joint_free=0.98/S raw_c1=0.98/B block_c1=0.98/S joint_c1=0.98/B
+/usr/local/lib/python3.10/dist-packages/numpy/linalg/_linalg.py:2236: RuntimeWarning: overflow encountered in divide
+  s = divide(1, s, where=large, out=s)
+/usr/local/lib/python3.10/dist-packages/numpy/linalg/_linalg.py:2239: RuntimeWarning: invalid value encountered in multiply
+  res = matmul(transpose(vt), multiply(s[..., newaxis], transpose(u)))
+/sessions/rcw-01swovxph9hfq8w1lbdzy7ga/mnt/Gaussian/research/checks/as_ka_decision_agreement_v2_20261105.py:149: RuntimeWarning: invalid value encountered in matmul
+  Jb = J[:, b]; Pb.append(Jb @ np.linalg.pinv(Jb, rcond=1e-10))
+/sessions/rcw-01swovxph9hfq8w1lbdzy7ga/mnt/Gaussian/research/checks/as_ka_decision_agreement_v2_20261105.py:180: RuntimeWarning: invalid value encountered in matmul
+  Pv = P @ v; Pvp = v - Pv; Pbv = Pb[c['parent']] @ v; Pbvp = v - Pbv
+seed 5 stat=1.93e-09 t=28s all-eff raw_free=1.00/S joint_free=1.00/B raw_c1=1.00/B block_c1=0.00/S joint_c1=1.00/B
+seed 6 stat=4.48e-04 t=32s all-eff raw_free=1.00/B joint_free=1.00/B raw_c1=1.00/B block_c1=1.00/B joint_c1=1.00/B
+seed 7 stat=7.29e-10 t=37s all-eff raw_free=0.89/B joint_free=0.48/B raw_c1=0.89/B block_c1=0.89/B joint_c1=0.48/B
+seed 8 stat=2.51e-09 t=41s all-eff raw_free=1.00/S joint_free=1.00/S raw_c1=0.95/B block_c1=0.95/B joint_c1=1.00/B
+seed 9 stat=4.29e-04 t=47s all-eff raw_free=0.98/B joint_free=0.98/B raw_c1=0.98/B block_c1=0.98/B joint_c1=0.98/B
+seed 10 stat=3.38e-04 t=52s all-eff raw_free=1.00/S joint_free=1.00/S raw_c1=1.00/S block_c1=1.00/S joint_c1=0.99/B
+seed 11 stat=1.05e-04 t=56s all-eff raw_free=0.54/S joint_free=0.54/S raw_c1=0.54/S block_c1=0.54/S joint_c1=0.54/S

@@ -1,0 +1,24 @@
+{
+ "passed": true,
+ "returncode": 0,
+ "summary": [
+  "41 passed, 1 warning in 171.43s (0:02:51)"
+ ],
+ "wall_s": 173.3436472415924,
+ "utc": "2026-11-05T11:14:23Z",
+ "hashes": {
+  "src\\df_est.py": "1d61aacb029d0b35b16b041842eafe2bfdf4af80b2fffb7b86a14a3b2898e125",
+  "src\\f0_config.py": "51a29b22c75ce21bdc6d6072bf2d4f9aee99382e61965b2b87d7033809d0096b",
+  "src\\gsfast.py": "94b12191385d2f537bf748033f51ed5872d0f7947fe3057ff98ec63f2ec0267f",
+  "src\\gsfit.py": "d0413d826865f82ccf359f13b2f1ffbf01c8f453a29ec5530725814e23bc2958",
+  "src\\gskernel.py": "047caafeb008e520a3538d9e94257fef3c0e0ffaab736fd40bde8e2251de06c6",
+  "src\\omega.py": "56e47b632f0e831f6267450b2090f0133b3eaa357b8596535ce9074534480230",
+  "src\\plin.py": "810976da877ac2af0ed9e8246d99d3c0f2cdafd67b41199c5281c110d7d5f90f",
+  "src\\reference_eval.py": "489883417490e133063b68c448facd1752d408f4aa4d3d0ef0b0a57d27af99b2",
+  "src\\synth.py": "10254049a996041c92e3185da5bb89a0e8e52e4954bed0ad38ee64515e8dbce0",
+  "tests\\test_f0_units.py": "fd6b1030bb8e0221f6a11e98fd14c8f950ea553d84b885331ed7b9eafa19cc30",
+  "tests\\test_gsfast_equiv.py": "fbdeebac9b74030dad8e6c04d53c17d84f21e41ff0cd23519a84d3df77ff55ce",
+  "tests\\test_f3_units.py": "a63e39f4d9b66a6799e78273a9a5c4686c72f7ef3b59dc1ade89bbd5b3843d7b"
+ },
+ "tail": ".........................................                                [100%]\n============================== warnings summary ===============================\ntests/test_gsfast_equiv.py::test_grad_matches_torch_autograd[24]\n  D:\\Gaussian\\tests\\test_gsfast_equiv.py:23: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n  Consider using tensor.detach() first. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\torch\\csrc\\autograd\\generated\\python_variable_methods.cpp:821.)\n    assert abs(lt - float(loss)) < 1e-14\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n41 passed, 1 warning in 171.43s (0:02:51)\n\n--- stderr ---\n"
+}

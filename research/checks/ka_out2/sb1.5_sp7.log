@@ -1,0 +1,12 @@
+seed 0 stat=7.72e-05 t=5s all-eff raw_free=0.99/S joint_free=0.99/S raw_c1=0.99/S block_c1=0.99/S joint_c1=0.99/S
+seed 1 stat=1.37e-04 t=9s all-eff raw_free=0.97/S joint_free=1.00/S raw_c1=0.97/S block_c1=0.97/S joint_c1=0.97/S
+seed 2 stat=1.38e-06 t=13s all-eff raw_free=0.93/S joint_free=0.93/S raw_c1=0.93/S block_c1=0.93/S joint_c1=0.93/S
+seed 3 stat=1.82e-04 t=18s all-eff raw_free=1.00/S joint_free=1.00/S raw_c1=1.00/S block_c1=1.00/S joint_c1=1.00/S
+seed 4 stat=1.31e-06 t=22s all-eff raw_free=1.00/S joint_free=1.00/B raw_c1=1.00/B block_c1=1.00/S joint_c1=1.00/B
+seed 5 stat=2.72e-03 t=27s all-eff raw_free=0.79/B joint_free=0.79/B raw_c1=0.79/B block_c1=0.79/B joint_c1=0.79/B
+seed 6 stat=1.28e-04 t=31s all-eff raw_free=0.71/S joint_free=0.85/S raw_c1=0.71/S block_c1=0.71/S joint_c1=0.93/B
+seed 7 stat=1.21e-07 t=37s all-eff raw_free=1.00/B joint_free=1.00/B raw_c1=1.00/B block_c1=1.00/S joint_c1=1.00/B
+seed 8 stat=8.49e-04 t=41s all-eff raw_free=0.39/S joint_free=1.00/B raw_c1=0.39/S block_c1=0.39/S joint_c1=1.00/B
+seed 9 stat=4.45e-10 t=46s all-eff raw_free=0.94/S joint_free=0.94/S raw_c1=0.94/S block_c1=0.94/S joint_c1=0.94/S
+seed 10 stat=5.10e-10 t=51s all-eff raw_free=0.83/S joint_free=0.88/B raw_c1=0.88/B block_c1=0.88/B joint_c1=0.88/B
+seed 11 stat=4.04e-09 t=55s all-eff raw_free=0.88/S joint_free=1.00/B raw_c1=1.00/B block_c1=0.88/S joint_c1=1.00/B

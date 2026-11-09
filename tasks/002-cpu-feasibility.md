@@ -1,0 +1,1 @@
+Read archive/scripts and research P1817 reports only. Map a tiny CPU normalized-Gaussian renderer and covariance-oracle risk experiment, identify topK discontinuity, seed/clean-truth boundaries, cheapest strong full-pipelineMC-SURE comparator. No code edits or execution. Return a compact implementation plan and blockers; Sonnet owns contract.

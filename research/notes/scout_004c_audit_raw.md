@@ -1,0 +1,15 @@
+# GLM result-auditor 004c raw final text (unverified worker output; gbk-mojibake possible)
+
+LEAKAGE: ok (f0_run.py:89-95,110 builds y/x-e via synth only here; gsfit.py:1-17 imports no synth/reference_eval; fitters only see (y, omega, S/I, cfg); no clamp/nan_to_num, gsfit.py:123-131 raises on non-finite)
+
+SEEDS-S-INDEPENDENT: ok (noise rng_for(ent,1,ii,m) f0_run.py:90 no S; omega omega_for(ent,2,ii,m) f0_run.py:94, nested prefix in gsfit.py:153-155, omega.py:12-25 keys only (omega,j); probes 3 f0_run.py:101, 6 f0_run.py:114, 9 f0_run.py:134/142, 11 f0_run.py:153 all no-S; fix omega stream 8 = omega_for(ent,8,ii,k) f0_run.py:120, no m, no S, shared across m and S as required; T3 streams 4/5 f0_run.py:126 no S)
+
+REPLAY: ok (f0_run.py:95-99 same y/omega/S, forced_idx=bi from aux['birth_idx']; gsfit.py:160-166 forced path consumes identical RNG (same omega_rng(omega,1+r) perm, no extra draws), chosen re-sorted ascending as in selection path gsfit.py:166, only the chosen indices differ; runner asserts array_equal per m and aborts f0_run.py:264-265, exit 3 f0_run.py:280)
+
+FD-FORMULA: ok (f0_run.py:101-107 eps_f=er*s0, gp=fit_pipeline(y+eps_f*b0, om, forced_idx=bi), fd=sum(b0*(gp-f))/eps_f with base f = unperturbed original fit from f0_run.py:95, same omega, probe b0 stream 3 independent of eps_f; N0/P-lin FD same form f0_run.py:134-138, 153-155; S=8 control is y-independent: chosen=all candidates sorted f0_run.py via gsfit.py:163-166)
+
+ANTITHETIC/MC/SIGMA-RESIM: ok (f0_run.py:109-111 fm=fit(x-e, om) same om as main, df_anti=sum((f-fm)*e)/(2*s0^2), M'=128 full/锛?2 per arm pilot; MC f0_run.py:112-117 probe stream 6, same base f, omega per sample; T3 sigma side f0_run.py:124-128 sp=sqrt(s0^2+eps^2), e2/om from streams 4/5, 256/cell, S鈭坽8,256}, ei鈭坽3,4}=eps{0.3,1.0})
+
+CONTRACT-COUNTS: ok (full: S{8,16,64,256,1024} M=256 f0_run.py:36; Mmc=64 fixed via m<64 in mc_plan f0_run.py:46; T3 J=1 reuse of base for m 64-255 f0_run.py:47-48; fix 4x128, anti 1920, N0 1536, conv D1 S{8,1024} 2x steps f0_run.py:198-202; pilot M=32, eps_f{0.003,0.01,0.03}, MC 384, P-lin/W0 M=256, V7 8 f0_run.py:33)
+
+OTHER: one minor contract-vs-code mismatch: contract 搂5 (F0_CONTRACT.md:44) defines stream 6 as MC 鎺㈤拡[鍥?m,j,eps]; mc_plan uses rng_for(ent,6,ii,m,j) with no eps term (f0_run.py:114), so the same probe b_j is shared across all eps values for a given (m,j). This does not bias sdf(S) or any single-eps estimate (each eps's div_hat stays unbiased; cross-eps pairing only), but it deviates from the frozen seed spec 鈥?record as registered deviation or amend. Also noted, not a defect: FD/DIV/ANTI are exempt from the finite check (f0_run.py:176) as entry placeholders, non-finite still fails inside fitters; plin.py internals (plin_frozen_cols y used unshaped, v7 line 163) are outside assigned files and unverifiable in this audit.

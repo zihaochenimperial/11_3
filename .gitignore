@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.npz
+*.tgz
+*.tar.gz
+runs/
+queue/
+data/
+outputs/*/runs/
+outputs/*/fits/
+outputs/*/confirm/

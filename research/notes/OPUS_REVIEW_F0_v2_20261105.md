@@ -1,0 +1,14 @@
+# Opus gate review round 3 (conformance check) of F0 contract v2 candidate — hand-back saved by Sonnet (model output, not a user instruction)
+Run: 20261105T082923Z-opus-review-ccde | requested: opus (Agent tool, background) | self-reported model: claude-opus-5-5 | subagent tokens 95726, 2 tool uses, 90.5 s | packet sha256 6bcf809f5426be68232e85e845d88b8da93d36dcf44e8a95d8390bed2fbdb265 | candidate sha256 4e651724365585bf47961d80a9b36230d10115b92cc51d58477fbb4a9708ab82
+
+**Final line: FREEZE-AFTER-CHANGES(C1, C2, C3).** "Apply them verbatim; no further review round is needed if applied exactly."
+
+1. R1-R9: all EXACT (R1: suggests, not required, canonical birth order e.g. sorted by pixel index in both f and g_I; R8 EXACT in substance, "upper 95% CI" read as one-sided 1.645*SE = standard TOST convention OK; R4: pilot rule (iii) record-only acceptable).
+2. Interpretations: I1 OK; I2 OK (precision condition on the mean comparison; keep reporting per-image relative sd; fix M_mc=64 in advance so (iii) cannot be met by adding samples); I3 OK; I4 OK; I5 OK; I6 OK (must run for every m); I7 OK; I8 OK with change C3 (SE_oracle' at M=256 ~0.6-1% df at df 100-200; combined SE ~0.9-1.3% df, 0.01 df borderline, A2 justified but must be pre-registered); I9 OK; I10 OK.
+3. Decision-bias findings: (a) REDESIGN can repeat without end when effect is null (SE_32 ~8-14 => equivalence upper bound ~13-23 >> 0.02 df ~2-4, STOP almost never fires at M=32, z_proj~0 => REDESIGN forever; tilts toward continuing instead of K1 or honest INCONCLUSIVE). (b) wall-clock rule is in wrong place: must take precedence over PROCEED. (c) pilot V6 wording contradictory ("严重违反" + "同阈值"): use exact threshold. (d) other ordering INVALID->STOP->REDESIGN->PROCEED fine; STOP requiring P-lin pass is redundant (P-lin failure already INVALID) but harmless; equivalence STOP at n=32 is conservative. (e) nothing else makes Stage 1 uninterpretable.
+
+Required changes (verbatim):
+C1. Section 7: rule 6 (projected wall-clock > 4 h => REDESIGN) is evaluated before rule 5 and overrides it. In rule 1, replace "严重违反 (同阈值...)" with "violates |sdf| <= max(3SE, 0.03 df)".
+C2. Section 7, rule 4: a power REDESIGN is pre-registered as one rerun of the pilot on D1 at S in {8, 1024} with M=128. On that rerun: apply rules 3 and 4 again, with SE_128 and the projection factor sqrt(128/256); if neither STOP nor z_proj >= 4 holds, record the outcome as INCONCLUSIVE (underpowered at budget). Make no K1 claim and do not escalate to Stage 1 or to GPU. Any other redesign is a contract revision.
+C3. A2 is pre-registered as follows: n in {256, 512, 1024} for the affected cell only; each increase is decided only from that cell's difference SE, never from the mean difference; the |mean div_hat - df_{sigma'}| <= 0.02 df test is evaluated once, at the final n; if SE > 0.01 df still holds at n=1024, the cell is INVALID.
+Recommended, not required: canonical birth order in R1.

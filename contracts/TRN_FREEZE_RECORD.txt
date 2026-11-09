@@ -1,0 +1,23 @@
+TRN FREEZE RECORD (append-only) — 合同 TRN_CONTRACT.md (= TRN_CONTRACT_CANDIDATE_v1_2.md)
+FROZEN_UTC 2026-11-08T09:41:55Z
+CONTRACT_SHA256 9fb304989d76777a45663bf06bb994a39c067a7533e1cbdf568e60e1e407f7e8 TRN_CONTRACT.md
+OPUS_GATES v0: run 20261108T090948Z-model-call-4034 REVISE; v1: run 20261108T092108Z-model-call-cc36 ACCEPT-WITH-CHANGES; v1.1: run 20261108T093308Z-model-call-e0b0 ACCEPT-WITH-CHANGES (C1-C8 incorporated; no further review required by Opus). Self-reported model: Claude Opus 5.5 (claude-opus-5-5).
+FROZEN_GEO e92732df923456bb8def96978304184752a00d58b897e4545abd43210c15fbc4 src/geo_core.py (read-only import)
+FROZEN_GEO 076a0a61a5711df93236e04217114631747d43ade2713778a11cab4fa55d7bd3 src/geo_flops.py (read-only import)
+FROZEN_GEO 93f42252e3377a11e538d5361b7225ed766422b267d2019eb18bcce8d8eefeda src/geo_gen.py
+FROZEN_GEO af9d525d7740022ebb423222f2b34e09b32bd949a810e3b412dcf503e74dc0f9 src/as_core.py
+FROZEN_GEO e5d086786c0e042243f1466680d3e12188469dd0ad4ffc70b7e5aef670363d59 src/as_gen.py
+MODULE_SHA256 a2c061d129af28f2eee20d0258ef2ccc237d53eb99ddc845fc00dad7ca9a2ac6 trn_core.py
+MODULE_SHA256 6ba4c648450df30387383be11092114cc31f54a39b27de0cc7ec667002376896 trn_gen.py
+MODULE_SHA256 84257ea0b28c0c80e422250fa8897a1092dc043de724628d010621a29512e15a trn_flops.py
+MODULE_SHA256 8a2fd48e7060cf65c4bcb7ae70505e7cbb025d6aee41674cdb5f57524fcbaa77 trn_loop.py
+MODULE_SHA256 bd6abe59ac859fbfa606485d6fd9286e72af743063ba338638b1fe06f65cd778 trn_study.py
+TEST_SHA256 58f05a474df3124c026fc523bb242176b45f28c40ebea1b467b922c46e2a00e4 tests/test_trn_core.py  (13 tests ALL PASS in the cloud container 2026-11-08T09:41Z; the device VM has no scipy)
+EXPERIMENT_SHA256 a8ef07b959e8577852f23412008b7789ec09c385138d3cec504f9095067a0522 experiments/trn_s0.py
+EXPERIMENT_SHA256 5c467d713cf5bb750cfcbd4be2b57d9d71304914c619dbfbef6f24614108bd48 experiments/trn_same_state.py
+EXPERIMENT_SHA256 e9da8191d3be1a753203b41286d099ca2a888b67129a68a7ca18c5cd517597ea experiments/trn_same_state_reduce.py
+NOT_IMPLEMENTED D0c (analytic Gaussian-convolved-Gaussian block preconditioner) and D2b (same-theta backtracking reuse): claims limited to {D0, D0w, D0b, D0s, D2} + GEO/LMD dense direct (frozen config, untuned); same-theta reuse forbidden for ALL arms (contract section 6)
+CPU_HOUR_CAPS tune<=3, S0/G-A<=6, M same-state G-B<=6, other same-state<=10, closed loop+confirm-det<=12, total<=40 (cloud container, 2 cores, single-thread-hours); exceeding a cap => that stage INCONCLUSIVE (contract section 8)
+PRE_FREEZE_DEV_EXPLORATION dev image 301 only: (a) one-off S/M same-state exploration with kappa=1e-4 (unrepresentative, retracted, FAIL-0031; script research/checks/trn_pilot_dev301_20261108.py), (b) code smoke/time tests of closed-loop D0/D0w/D0b and the same-state driver on 301-303 at S scale and 301 at M scale; no threshold depends on them
+NO_CONFIRM_ACCESS no confirm-det (321-344) or confirm-TRN5 (401-424) image or noise realisation has been generated; the gate tests use dummy index 9999
+ANALYZER_REGISTRATION none yet: ANALYZER_SHA256 / CONFIRM_UNSEALED lines are appended only before the single confirm-det run (G-E-det), after the closed-loop analyzer is written and its dev dry run is done

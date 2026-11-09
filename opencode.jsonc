@@ -1,0 +1,45 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode-go/glm-5.3-flash",
+  "providers": {
+    "opencode-go": {
+      "settings": {
+        "apiKey": "{env:OPENCODE_API_KEY}"
+      }
+    }
+  },
+  "agents": {
+    "literature-scout": {
+      "description": "Search direct and adjacent papers. Return URLs, exact overlap, and uncertainty; do not edit files.",
+      "mode": "subagent",
+      "model": "opencode-go/glm-5.3-flash",
+      "system": "Work only on the named Gaussian question. Distinguish search leads from verified paper text. Return source URL and section for decisive claims.",
+      "permissions": [{"action":"edit","resource":"*","effect":"deny"}]
+    },
+    "code-mapper": {
+      "description": "Locate official entry points, flags, and dependencies in a named source subtree; do not edit or run experiments.",
+      "mode": "subagent",
+      "model": "opencode-go/glm-5.3-flash",
+      "system": "Read only the assigned source subtree. Cite file paths and line numbers. Return a short command/dependency map and unresolved questions. Do not modify files or launch training or GPU work.",
+      "permissions": [{"action":"edit","resource":"*","effect":"deny"}]
+    },
+    "repro-engineer": {
+      "description": "Map official source code and implement a small isolated reproduction patch.",
+      "mode": "subagent",
+      "model": "opencode-go/kimi-k2.7-code",
+      "system": "Pin upstream commit. Preserve the evaluator and test boundary. Edit only the assigned branch or file; record exact commands and outputs. Do not launch a GPU job without the single-runner slot."
+    },
+    "result-auditor": {
+      "description": "Read logs and challenge claims, leakage, budgets, and baseline fairness without editing.",
+      "mode": "subagent",
+      "model": "opencode-go/glm-5.3-flash",
+      "system": "Find measurement errors and unsupported conclusions. Report exact file/line or run ID. Do not promote a result based on a proxy metric.",
+      "permissions": [{"action":"edit","resource":"*","effect":"deny"}]
+    }
+  },
+  "permissions": [
+    {"action":"external_directory","resource":"*","effect":"ask"},
+    {"action":"shell","resource":"git push *","effect":"deny"}
+  ]
+}
+

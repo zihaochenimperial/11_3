@@ -1,0 +1,23 @@
+JR verify reduce: 12 images x 48 problems
+DECISION: STOP
+strongest control (Q-AUC): RND-J ; per-PSF mean dQ(OBS-J - strongest): {'G15': -0.717, 'AG': -0.604, 'MO': -0.788, 'DK': -1.307} ; guard False
+
+arm        Q-AUC    O-AUC     Qend    peakQ  c(rho=.1) c(rho=.03)      meanW   wall[s]    rej   grp% stops / censored(.03)
+OBS-J     23.544   -1.823   22.802   24.551   1.12e+09   4.13e+09   3.01e+10      12.0   0.22   0.29 {'cap': 48} / 0
+SPA-J     23.309   -1.938   22.579   24.482   9.27e+08   2.99e+09      3e+10      10.1   0.20   0.00 {'cap': 48} / 0
+OBS-I     24.003   -1.513   23.799   24.727   1.28e+09   1.04e+10      3e+10      12.1   0.25   0.12 {'cap': 48} / 6
+OBS0-J    23.290   -1.849   22.527   24.409   1.13e+09   3.86e+09   3.01e+10      12.4   0.23   0.29 {'cap': 48} / 0
+RND-J     24.398   -1.549   24.220   25.031    1.1e+09    8.4e+09      3e+10      10.1   0.12   0.01 {'cap': 48} / 6
+OVL-J     23.376   -1.817   22.668   24.342   9.11e+08    3.7e+09      3e+10      10.6   0.21   0.01 {'cap': 48} / 0
+IND1      23.815   -1.698   23.321   24.733    5.9e+08   4.66e+09      3e+10      14.1   0.10   0.00 {'cap': 48} / 0
+FULL      20.076   -0.095   21.232   21.232   2.86e+10   2.97e+10   2.52e+10       1.6   0.58   0.00 {'cap': 36, 'no_step': 12} / 44
+
+gates (image-level, n=12, BCa 10000 resamples; dQ = Q-AUC(OBS-J) - Q-AUC(X) [dB]; dO = O-AUC(OBS-J) - O-AUC(X) [log10, lower=OBS better]):
+  vs SPA-J   dQ +0.235  LB5 -0.001  (delta 0.15, wins 8/12) | dO +0.115  UB95 +0.192 (<= 0.05) | FAIL
+  vs OBS-I   dQ -0.460  LB5 -0.670  (delta 0.15, wins 2/12) | dO -0.310  UB95 -0.268 (<= 0.05) | FAIL
+  vs OBS0-J  dQ +0.253  LB5 +0.132  (delta 0.10, wins 10/12) | dO +0.026  UB95 +0.056 (<= 0.05) | regularisation effect, not mechanism increment
+  vs RND-J   dQ -0.854  LB5 -1.072  (delta 0.15, wins 1/12) | dO -0.274  UB95 -0.228 (<= 0.05) | FAIL
+  vs OVL-J   dQ +0.168  LB5 +0.046  (delta 0.10, wins 8/12) | dO -0.006  UB95 +0.052 (<= 0.05) | regularisation effect, not mechanism increment
+  vs IND1    dQ -0.271  LB5 -0.503  (delta 0.15, wins 4/12) | dO -0.125  UB95 -0.059 (<= 0.05) | FAIL
+descriptive free-grouping mean dQ: {"OBS-I": -0.53, "IND1": -0.345}
+diag: {"comp_median": {"OBS-J": 0.4086287846097912, "SPA-J": 0.5022783137231929, "OBS-I": 0.7928042801197387, "OBS0-J": 0.4019514831032551, "RND-J": 0.7209896053182744, "OVL-J": 0.6404898520324792, "IND1": NaN, "FULL": 0.00908436356899154}, "counts0": {"G15": {"identifiable": 200, "weak": 16, "null": 0}, "AG": {"identifiable": 182, "weak": 34, "null": 0}, "MO": {"identifiable": 178, "weak": 38, "null": 0}, "DK": {"identifiable": 191, "weak": 25, "null": 0}}, "ARI": {"OBS_vs_SPA_sweep1": 0.21006944444444442, "OBS_vs_OVL_sweep1": 0.3399373638344226, "OBS_across_PSF_sweep1": 0.5528095497458242, "OBS_adjacent_sweeps": 0.7041957565854624}}

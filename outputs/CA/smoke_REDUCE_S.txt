@@ -1,0 +1,68 @@
+CA reduce smoke block S: 3 images, 72 runs; rep_psnr mean 35.8 (min 27.1 max 48.5)
+
+R0-vs-R1 matching (descriptive): mass_ratio 1.000 [0.999, 1.000]; peak_R0 0.974 [0.933, 1.003]; peak_R1 1.000 [1.000, 1.000]; grad_energy_ratio 0.902 [0.789, 1.001]; lap_energy_ratio 0.773 [0.494, 1.000]
+
+Q-AUC [dB] by cell and arm (mean over images):
+cell                IND1     OBS-J     RND-J
+R0/free            24.50     24.49     24.00
+R0/noisy           23.67     24.04     23.91
+R1/free            23.72     23.66     23.26
+R1/noisy           23.02     23.47     23.15
+
+GAP OBS-J - RND-J (dB; BCa 90% two-sided = one-sided 95% bounds; D if UB<-0.25, E if LB>-0.25):
+  R0/free    mean +0.488  LB5 +0.080  UB95 +0.895  wins 2/3  sd 0.61  -> E
+  R0/noisy   mean +0.132  LB5 +0.100  UB95 +0.185  wins 3/3  sd 0.05  -> E
+  R1/free    mean +0.404  LB5 +0.069  UB95 +0.972  wins 2/3  sd 0.52  -> E
+  R1/noisy   mean +0.325  LB5 +0.250  UB95 +0.368  wins 3/3  sd 0.07  -> E
+  N_effect(noise)    mean -0.217  LB5 -0.832  UB95 +0.165  sd 0.58  MDE80 0.83
+  R_effect(rep)      mean +0.055  LB5 -0.013  UB95 +0.123  sd 0.10  MDE80 0.15
+  I_interaction      mean +0.276  LB5 +0.204  UB95 +0.413  sd 0.12  MDE80 0.17
+  VERDICT (RND-J): V-NONE STRONG
+
+GAP OBS-J - IND1 (dB; BCa 90% two-sided = one-sided 95% bounds; D if UB<-0.25, E if LB>-0.25):
+  R0/free    mean -0.009  LB5 -0.305  UB95 +0.149  wins 2/3  sd 0.26  -> I
+  R0/noisy   mean +0.368  LB5 +0.288  UB95 +0.448  wins 3/3  sd 0.12  -> E
+  R1/free    mean -0.060  LB5 -0.341  UB95 +0.084  wins 2/3  sd 0.24  -> I
+  R1/noisy   mean +0.449  LB5 +0.336  UB95 +0.647  wins 3/3  sd 0.18  -> E
+  N_effect(noise)    mean +0.443  LB5 +0.327  UB95 +0.642  sd 0.18  MDE80 0.26
+  R_effect(rep)      mean +0.016  LB5 -0.097  UB95 +0.076  sd 0.10  MDE80 0.14
+  I_interaction      mean +0.132  LB5 -0.159  UB95 +0.307  sd 0.27  MDE80 0.38
+  VERDICT (IND1): V-NONE TENTATIVE
+
+Supportive outcomes (OBS-J - RND-J):
+  peak|R0/free       mean +0.652  LB5 +0.181  UB95 +1.426  n=3
+  peak|R0/noisy      mean +0.187  LB5 +0.151  UB95 +0.252  n=3
+  peak|R1/free       mean +0.538  LB5 +0.151  UB95 +1.203  n=3
+  peak|R1/noisy      mean +0.384  LB5 +0.337  UB95 +0.413  n=3
+  end|R0/free        mean +0.652  LB5 +0.181  UB95 +1.426  n=3
+  end|R0/noisy       mean +0.191  LB5 +0.171  UB95 +0.222  n=3
+  end|R1/free        mean +0.538  LB5 +0.151  UB95 +1.203  n=3
+  end|R1/noisy       mean +0.400  LB5 +0.279  UB95 +0.472  n=3
+  Qedge|R0/free      mean +0.674  LB5 +0.106  UB95 +1.242  n=3
+  Qedge|R0/noisy     mean +0.316  LB5 +0.110  UB95 +0.522  n=3
+  Qedge|R1/free      mean +0.603  LB5 +0.151  UB95 +1.358  n=3
+  Qedge|R1/noisy     mean +0.530  LB5 +0.306  UB95 +0.911  n=3
+  Qblur|R0/free      mean +0.692  LB5 -2.039  UB95 +2.250  n=3
+  Qblur|R0/noisy     mean +0.088  LB5 -0.481  UB95 +0.426  n=3
+  Qblur|R1/free      mean +0.996  LB5 -1.345  UB95 +2.264  n=3
+  Qblur|R1/noisy     mean +0.256  LB5 -0.390  UB95 +0.656  n=3
+  O|R0/free          mean -0.590  LB5 -1.156  UB95 +0.346  n=3
+  O|R0/noisy         mean -0.451  LB5 -0.918  UB95 +0.017  n=3
+  O|R1/free          mean -0.866  LB5 -1.456  UB95 +0.255  n=3
+  O|R1/noisy         mean -0.601  LB5 -1.689  UB95 +0.050  n=3
+  Qfit4|R0/free      mean -0.205  LB5 -0.614  UB95 +0.000  n=3
+  Qfit4|R0/noisy     mean -0.448  LB5 -0.703  UB95 -0.294  n=3
+  Qfit4|R1/free      mean -0.204  LB5 -0.613  UB95 +0.000  n=3
+  Qfit4|R1/noisy     mean -0.436  LB5 -0.701  UB95 -0.279  n=3
+  Qfit1|R0/free      mean -0.306  LB5 -0.478  UB95 -0.219  n=3
+  Qfit1|R0/noisy     mean +0.130  LB5 +nan  UB95 +nan  n=1
+  Qfit1|R1/free      mean -0.222  LB5 -0.498  UB95 -0.077  n=3
+  Qfit1|R1/noisy     mean +0.645  LB5 +nan  UB95 +nan  n=1
+  nf|R0/noisy        mean +0.005  LB5 -0.013  UB95 +0.015  n=3
+  nf|R1/noisy        mean +0.003  LB5 -0.022  UB95 +0.017  n=3
+  mf|R1/free         mean +0.062  LB5 -0.089  UB95 +0.304  n=3
+  mf|R1/noisy        mean -0.072  LB5 -0.125  UB95 +0.024  n=3
+  proj|R0/free       mean +0.488  LB5 +0.080  UB95 +0.895  n=3
+  proj|R0/noisy      mean +0.132  LB5 +0.100  UB95 +0.185  n=3
+  proj|R1/free       mean +0.489  LB5 +0.141  UB95 +0.837  n=3
+  proj|R1/noisy      mean +0.371  LB5 +0.360  UB95 +0.394  n=3

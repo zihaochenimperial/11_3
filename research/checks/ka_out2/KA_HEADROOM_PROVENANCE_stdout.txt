@@ -1,0 +1,2 @@
+ka_out oracle gain frac of 1/2|r|^2: mean 0.502 | raw_c1 0.447 | joint_c1 0.423 | n=270
+ka_out2 oracle gain frac of 1/2|r|^2: mean 0.503 | raw_c1 0.457 | joint_c1 0.460 | n=108

@@ -1,0 +1,386 @@
+05:27:25 confirm blocks ['P', 'S', 'X']
+05:28:19 fit 811 rep_psnr 32.19
+05:28:19 fit 812 rep_psnr 28.20
+05:29:13 fit 814 rep_psnr 26.06
+05:29:16 fit 813 rep_psnr 29.60
+05:30:08 fit 815 rep_psnr 31.83
+05:30:10 fit 816 rep_psnr 32.33
+05:31:05 fit 818 rep_psnr 27.25
+05:31:07 fit 817 rep_psnr 30.37
+05:32:00 fit 820 rep_psnr 34.66
+05:32:01 fit 819 rep_psnr 34.16
+05:32:56 fit 822 rep_psnr 35.74
+05:32:59 fit 821 rep_psnr 30.64
+05:33:54 fit 823 rep_psnr 30.80
+05:33:57 fit 824 rep_psnr 27.84
+05:34:53 fit 826 rep_psnr 27.69
+05:34:53 fit 825 rep_psnr 29.87
+05:34:53 block P tasks 64 core-h already 0.00 of cap 6.00
+05:37:50 811 AG done 20 runs (2.88 core-min) block P 0.048/6.00 core-h
+05:38:49 811 G15 done 20 runs (3.85 core-min) block P 0.112/6.00 core-h
+05:42:48 811 MO done 20 runs (4.88 core-min) block P 0.194/6.00 core-h
+05:43:54 811 DK done 20 runs (4.99 core-min) block P 0.277/6.00 core-h
+05:46:18 812 G15 done 20 runs (3.43 core-min) block P 0.334/6.00 core-h
+05:46:36 812 AG done 20 runs (2.65 core-min) block P 0.378/6.00 core-h
+05:51:07 812 MO done 20 runs (4.74 core-min) block P 0.457/6.00 core-h
+05:51:35 812 DK done 20 runs (4.88 core-min) block P 0.538/6.00 core-h
+05:54:35 813 AG done 20 runs (2.96 core-min) block P 0.588/6.00 core-h
+05:55:07 813 G15 done 20 runs (3.93 core-min) block P 0.653/6.00 core-h
+06:00:02 813 MO done 20 runs (5.34 core-min) block P 0.742/6.00 core-h
+06:00:27 813 DK done 20 runs (5.22 core-min) block P 0.829/6.00 core-h
+06:03:13 814 AG done 20 runs (2.73 core-min) block P 0.875/6.00 core-h
+06:03:48 814 G15 done 20 runs (3.70 core-min) block P 0.936/6.00 core-h
+06:07:53 814 MO done 20 runs (4.57 core-min) block P 1.013/6.00 core-h
+06:08:35 814 DK done 20 runs (4.69 core-min) block P 1.091/6.00 core-h
+06:11:40 815 AG done 20 runs (3.02 core-min) block P 1.141/6.00 core-h
+06:12:03 815 G15 done 20 runs (4.09 core-min) block P 1.209/6.00 core-h
+06:16:55 815 MO done 20 runs (5.16 core-min) block P 1.295/6.00 core-h
+06:17:26 815 DK done 20 runs (5.29 core-min) block P 1.383/6.00 core-h
+06:20:16 816 AG done 20 runs (2.77 core-min) block P 1.430/6.00 core-h
+06:20:40 816 G15 done 20 runs (3.69 core-min) block P 1.491/6.00 core-h
+06:25:05 816 MO done 20 runs (4.72 core-min) block P 1.570/6.00 core-h
+06:25:32 816 DK done 20 runs (4.77 core-min) block P 1.649/6.00 core-h
+06:28:32 817 AG done 20 runs (2.94 core-min) block P 1.698/6.00 core-h
+06:29:01 817 G15 done 20 runs (3.87 core-min) block P 1.763/6.00 core-h
+06:33:46 817 MO done 20 runs (5.14 core-min) block P 1.848/6.00 core-h
+06:34:26 817 DK done 20 runs (5.30 core-min) block P 1.937/6.00 core-h
+06:37:17 818 AG done 20 runs (2.81 core-min) block P 1.984/6.00 core-h
+06:37:37 818 G15 done 20 runs (3.78 core-min) block P 2.047/6.00 core-h
+06:42:11 818 MO done 20 runs (4.80 core-min) block P 2.127/6.00 core-h
+06:42:34 818 DK done 20 runs (4.86 core-min) block P 2.208/6.00 core-h
+06:45:37 819 AG done 20 runs (2.99 core-min) block P 2.257/6.00 core-h
+06:46:20 819 G15 done 20 runs (4.08 core-min) block P 2.325/6.00 core-h
+06:50:45 819 MO done 20 runs (5.04 core-min) block P 2.409/6.00 core-h
+06:51:46 819 DK done 20 runs (5.32 core-min) block P 2.498/6.00 core-h
+06:54:33 820 AG done 20 runs (2.73 core-min) block P 2.544/6.00 core-h
+06:54:33 820 G15 done 20 runs (3.73 core-min) block P 2.606/6.00 core-h
+06:59:44 820 MO done 20 runs (5.09 core-min) block P 2.691/6.00 core-h
+06:59:49 820 DK done 20 runs (5.16 core-min) block P 2.777/6.00 core-h
+07:02:44 821 AG done 20 runs (2.87 core-min) block P 2.824/6.00 core-h
+07:03:45 821 G15 done 20 runs (3.95 core-min) block P 2.890/6.00 core-h
+07:08:15 821 MO done 20 runs (5.40 core-min) block P 2.980/6.00 core-h
+07:09:19 821 DK done 20 runs (5.46 core-min) block P 3.071/6.00 core-h
+07:12:10 822 AG done 20 runs (2.79 core-min) block P 3.118/6.00 core-h
+07:12:11 822 G15 done 20 runs (3.87 core-min) block P 3.182/6.00 core-h
+07:17:18 822 MO done 20 runs (5.04 core-min) block P 3.266/6.00 core-h
+07:17:27 822 DK done 20 runs (5.17 core-min) block P 3.352/6.00 core-h
+07:20:48 823 AG done 20 runs (3.28 core-min) block P 3.407/6.00 core-h
+07:21:47 823 G15 done 20 runs (4.40 core-min) block P 3.481/6.00 core-h
+07:26:27 823 MO done 20 runs (5.55 core-min) block P 3.573/6.00 core-h
+--- RESUME #1 07:27:53 ---
+07:27:54 confirm blocks ['P', 'S', 'X']
+07:27:54 fit 811 rep_psnr 32.19
+07:27:54 fit 812 rep_psnr 28.20
+07:27:54 fit 813 rep_psnr 29.60
+07:27:54 fit 814 rep_psnr 26.06
+07:27:54 fit 815 rep_psnr 31.83
+07:27:54 fit 816 rep_psnr 32.33
+07:27:54 fit 817 rep_psnr 30.37
+07:27:54 fit 819 rep_psnr 34.16
+07:27:54 fit 820 rep_psnr 34.66
+07:27:54 fit 821 rep_psnr 30.64
+07:27:54 fit 822 rep_psnr 35.74
+07:27:54 fit 823 rep_psnr 30.80
+07:27:54 fit 824 rep_psnr 27.84
+07:27:54 fit 825 rep_psnr 29.87
+07:27:54 fit 826 rep_psnr 27.69
+07:27:54 fit 818 rep_psnr 27.25
+07:27:54 block P tasks 64 core-h already 3.68 of cap 6.00
+07:27:54 811 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 811 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 811 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 812 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 811 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 812 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 812 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 813 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 812 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 813 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 813 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 813 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 814 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 814 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 814 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 815 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:54 814 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 815 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 815 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 816 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 816 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 816 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 815 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 816 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 817 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 817 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 817 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 817 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 818 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 818 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 818 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 818 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 819 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 819 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 819 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 819 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 820 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 820 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 820 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 821 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 820 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 821 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 821 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 822 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 821 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 822 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 822 DK done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:55 822 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:56 823 G15 done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:56 823 MO done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:27:56 823 AG done 0 runs (0.00 core-min) block P 3.678/6.00 core-h
+07:28:16 823 DK done 1 runs (0.32 core-min) block P 3.683/6.00 core-h
+07:30:43 824 G15 done 15 runs (2.73 core-min) block P 3.729/6.00 core-h
+07:31:07 824 AG done 20 runs (2.81 core-min) block P 3.776/6.00 core-h
+07:35:36 824 MO done 20 runs (4.79 core-min) block P 3.855/6.00 core-h
+07:36:11 824 DK done 20 runs (4.96 core-min) block P 3.938/6.00 core-h
+07:39:12 825 AG done 20 runs (2.97 core-min) block P 3.988/6.00 core-h
+07:39:39 825 G15 done 20 runs (3.98 core-min) block P 4.054/6.00 core-h
+07:44:38 825 MO done 20 runs (5.32 core-min) block P 4.143/6.00 core-h
+07:45:11 825 DK done 20 runs (5.43 core-min) block P 4.233/6.00 core-h
+07:48:08 826 AG done 20 runs (2.89 core-min) block P 4.281/6.00 core-h
+07:48:31 826 G15 done 20 runs (3.81 core-min) block P 4.345/6.00 core-h
+07:52:58 826 MO done 20 runs (4.73 core-min) block P 4.424/6.00 core-h
+07:53:35 826 DK done 20 runs (4.98 core-min) block P 4.507/6.00 core-h
+07:53:35 block S tasks 64 core-h already 0.00 of cap 3.50
+07:55:31 811 AG done 12 runs (1.89 core-min) block S 0.032/3.50 core-h
+07:56:04 811 G15 done 12 runs (2.43 core-min) block S 0.072/3.50 core-h
+07:58:42 811 MO done 12 runs (3.13 core-min) block S 0.124/3.50 core-h
+07:59:10 811 DK done 12 runs (3.05 core-min) block S 0.175/3.50 core-h
+08:00:48 812 AG done 12 runs (1.61 core-min) block S 0.202/3.50 core-h
+08:00:54 812 G15 done 12 runs (2.15 core-min) block S 0.237/3.50 core-h
+08:03:38 812 MO done 12 runs (2.77 core-min) block S 0.284/3.50 core-h
+08:03:42 812 DK done 12 runs (2.76 core-min) block S 0.330/3.50 core-h
+08:05:32 813 AG done 12 runs (1.79 core-min) block S 0.359/3.50 core-h
+08:06:04 813 G15 done 12 runs (2.39 core-min) block S 0.399/3.50 core-h
+08:08:46 813 MO done 12 runs (3.17 core-min) block S 0.452/3.50 core-h
+08:09:13 813 DK done 12 runs (3.09 core-min) block S 0.504/3.50 core-h
+08:10:54 814 AG done 12 runs (1.65 core-min) block S 0.531/3.50 core-h
+08:11:01 814 G15 done 12 runs (2.21 core-min) block S 0.568/3.50 core-h
+08:13:49 814 MO done 12 runs (2.86 core-min) block S 0.616/3.50 core-h
+08:13:59 814 DK done 12 runs (2.90 core-min) block S 0.664/3.50 core-h
+08:15:58 815 AG done 12 runs (1.96 core-min) block S 0.697/3.50 core-h
+08:16:21 815 G15 done 12 runs (2.49 core-min) block S 0.738/3.50 core-h
+08:19:21 815 MO done 12 runs (3.30 core-min) block S 0.793/3.50 core-h
+08:19:49 815 DK done 12 runs (3.39 core-min) block S 0.850/3.50 core-h
+08:21:31 816 AG done 12 runs (1.67 core-min) block S 0.877/3.50 core-h
+08:21:36 816 G15 done 12 runs (2.20 core-min) block S 0.914/3.50 core-h
+08:24:24 816 MO done 12 runs (2.82 core-min) block S 0.961/3.50 core-h
+08:24:25 816 DK done 12 runs (2.77 core-min) block S 1.007/3.50 core-h
+08:26:12 817 AG done 12 runs (1.74 core-min) block S 1.036/3.50 core-h
+08:26:49 817 G15 done 12 runs (2.38 core-min) block S 1.076/3.50 core-h
+08:29:24 817 MO done 12 runs (3.14 core-min) block S 1.128/3.50 core-h
+08:30:01 817 DK done 12 runs (3.14 core-min) block S 1.180/3.50 core-h
+08:31:37 818 G15 done 12 runs (2.19 core-min) block S 1.217/3.50 core-h
+08:31:42 818 AG done 12 runs (1.65 core-min) block S 1.244/3.50 core-h
+08:34:32 818 MO done 12 runs (2.85 core-min) block S 1.292/3.50 core-h
+08:34:39 818 DK done 12 runs (2.88 core-min) block S 1.340/3.50 core-h
+08:36:26 819 AG done 12 runs (1.75 core-min) block S 1.369/3.50 core-h
+08:36:56 819 G15 done 12 runs (2.36 core-min) block S 1.408/3.50 core-h
+08:39:37 819 MO done 12 runs (3.13 core-min) block S 1.461/3.50 core-h
+08:40:11 819 DK done 12 runs (3.18 core-min) block S 1.514/3.50 core-h
+08:41:57 820 AG done 12 runs (1.73 core-min) block S 1.542/3.50 core-h
+08:41:59 820 G15 done 12 runs (2.32 core-min) block S 1.581/3.50 core-h
+08:44:57 820 MO done 12 runs (2.95 core-min) block S 1.630/3.50 core-h
+08:44:59 820 DK done 12 runs (2.95 core-min) block S 1.679/3.50 core-h
+08:46:47 821 AG done 12 runs (1.76 core-min) block S 1.709/3.50 core-h
+08:47:18 821 G15 done 12 runs (2.31 core-min) block S 1.747/3.50 core-h
+08:50:01 821 MO done 12 runs (3.15 core-min) block S 1.800/3.50 core-h
+08:50:29 821 DK done 12 runs (3.11 core-min) block S 1.852/3.50 core-h
+08:52:10 822 AG done 12 runs (1.65 core-min) block S 1.879/3.50 core-h
+08:52:16 822 G15 done 12 runs (2.22 core-min) block S 1.916/3.50 core-h
+08:55:00 822 MO done 12 runs (2.78 core-min) block S 1.962/3.50 core-h
+08:55:08 822 DK done 12 runs (2.81 core-min) block S 2.009/3.50 core-h
+08:57:04 823 AG done 12 runs (1.89 core-min) block S 2.041/3.50 core-h
+08:57:35 823 G15 done 12 runs (2.54 core-min) block S 2.083/3.50 core-h
+09:00:21 823 MO done 12 runs (3.22 core-min) block S 2.137/3.50 core-h
+09:00:59 823 DK done 12 runs (3.34 core-min) block S 2.192/3.50 core-h
+09:02:45 824 G15 done 12 runs (2.36 core-min) block S 2.232/3.50 core-h
+09:02:49 824 AG done 12 runs (1.79 core-min) block S 2.262/3.50 core-h
+09:05:49 824 MO done 12 runs (3.01 core-min) block S 2.312/3.50 core-h
+09:05:55 824 DK done 12 runs (3.02 core-min) block S 2.362/3.50 core-h
+09:07:43 825 AG done 12 runs (1.78 core-min) block S 2.392/3.50 core-h
+09:08:15 825 G15 done 12 runs (2.39 core-min) block S 2.431/3.50 core-h
+09:10:59 825 MO done 12 runs (3.19 core-min) block S 2.485/3.50 core-h
+09:11:35 825 DK done 12 runs (3.27 core-min) block S 2.539/3.50 core-h
+09:13:22 826 G15 done 12 runs (2.35 core-min) block S 2.578/3.50 core-h
+09:13:24 826 AG done 12 runs (1.79 core-min) block S 2.608/3.50 core-h
+09:16:29 826 MO done 12 runs (3.04 core-min) block S 2.659/3.50 core-h
+09:16:31 826 DK done 12 runs (3.04 core-min) block S 2.710/3.50 core-h
+09:16:31 block X tasks 16 core-h already 0.00 of cap 3.00
+09:22:58 811 AG done 4 runs (6.37 core-min) block X 0.106/3.00 core-h
+09:25:02 811 G15 done 4 runs (8.39 core-min) block X 0.246/3.00 core-h
+--- RESUME #2 09:28:25 ---
+09:28:25 confirm blocks ['P', 'S', 'X']
+09:28:25 fit 811 rep_psnr 32.19
+09:28:25 fit 812 rep_psnr 28.20
+09:28:25 fit 814 rep_psnr 26.06
+09:28:25 fit 813 rep_psnr 29.60
+09:28:25 fit 815 rep_psnr 31.83
+09:28:25 fit 816 rep_psnr 32.33
+09:28:25 fit 817 rep_psnr 30.37
+09:28:25 fit 818 rep_psnr 27.25
+09:28:25 fit 819 rep_psnr 34.16
+09:28:25 fit 820 rep_psnr 34.66
+09:28:25 fit 822 rep_psnr 35.74
+09:28:25 fit 821 rep_psnr 30.64
+09:28:25 fit 823 rep_psnr 30.80
+09:28:25 fit 824 rep_psnr 27.84
+09:28:25 fit 825 rep_psnr 29.87
+09:28:25 fit 826 rep_psnr 27.69
+09:28:26 block P tasks 64 core-h already 4.51 of cap 6.00
+09:28:26 811 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 811 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 811 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 812 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 811 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 812 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 812 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 812 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 813 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 813 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 813 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 814 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 813 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 814 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 814 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 814 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 815 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 815 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:26 815 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 816 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 815 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 816 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 816 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 816 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 817 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 817 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 817 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 818 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 817 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 818 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 818 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 819 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 818 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 819 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 819 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 820 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 819 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 820 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 820 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 821 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 820 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 821 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 821 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 822 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 821 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 822 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 822 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 823 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:27 822 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 823 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 823 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 824 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 823 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 824 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 824 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 824 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 825 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 825 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 825 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 826 G15 done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 825 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 826 MO done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 826 DK done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 826 AG done 0 runs (0.00 core-min) block P 4.507/6.00 core-h
+09:28:28 block S tasks 64 core-h already 2.71 of cap 3.50
+09:28:29 811 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 811 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 811 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 812 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 811 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 812 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 812 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 812 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 813 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 813 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 813 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 814 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 813 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 814 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 814 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 815 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 814 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 815 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 815 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 815 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 816 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 816 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 816 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 817 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 816 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 817 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:29 817 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 818 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 817 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 818 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 818 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 819 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 818 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 819 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 819 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 820 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 819 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 820 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 820 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 821 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 820 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 821 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 821 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 821 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 822 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 822 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 822 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 823 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 822 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 823 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 823 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 823 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 824 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 824 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:30 824 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 825 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 824 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 825 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 825 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 826 G15 done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 825 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 826 MO done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 826 DK done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 826 AG done 0 runs (0.00 core-min) block S 2.710/3.50 core-h
+09:28:31 block X tasks 16 core-h already 0.34 of cap 3.00
+09:28:31 811 G15 done 0 runs (0.00 core-min) block X 0.337/3.00 core-h
+09:28:31 811 AG done 0 runs (0.00 core-min) block X 0.337/3.00 core-h
+09:36:21 811 DK done 3 runs (7.68 core-min) block X 0.465/3.00 core-h
+09:36:23 811 MO done 3 runs (7.70 core-min) block X 0.593/3.00 core-h
+09:42:15 812 AG done 4 runs (5.79 core-min) block X 0.690/3.00 core-h
+09:44:03 812 G15 done 4 runs (7.56 core-min) block X 0.816/3.00 core-h
+09:51:44 812 MO done 4 runs (9.31 core-min) block X 0.971/3.00 core-h
+09:54:11 812 DK done 4 runs (9.96 core-min) block X 1.137/3.00 core-h
+09:59:55 813 G15 done 4 runs (8.06 core-min) block X 1.271/3.00 core-h
+10:00:28 813 AG done 4 runs (6.20 core-min) block X 1.375/3.00 core-h
+10:10:41 813 MO done 4 runs (10.55 core-min) block X 1.550/3.00 core-h
+10:11:16 813 DK done 4 runs (10.61 core-min) block X 1.727/3.00 core-h
+10:17:10 814 AG done 4 runs (5.83 core-min) block X 1.824/3.00 core-h
+10:18:48 814 G15 done 4 runs (8.01 core-min) block X 1.958/3.00 core-h
+10:26:41 814 MO done 4 runs (9.34 core-min) block X 2.113/3.00 core-h
+10:28:38 814 DK done 4 runs (9.66 core-min) block X 2.274/3.00 core-h
+EXIT 0

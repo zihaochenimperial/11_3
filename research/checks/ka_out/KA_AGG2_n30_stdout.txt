@@ -1,0 +1,38 @@
+cell n | mean relative regret (all-pool) per rule | split%chosen | rho_all | top1-agree raw_c1~joint_c1, block_c1~joint_c1
+sb0.3_sp10   n= 30 | raw_free=0.067 joint_free=0.081 raw_c1=0.067 block_c1=0.075 joint_c1=0.099 | split%: 0.10 0.23 0.10 0.27 0.03 | rho_all: 0.61 0.61 0.55 0.58 0.56 | agree 0.27 0.27
+sb0.3_sp4    n= 30 | raw_free=0.057 joint_free=0.076 raw_c1=0.054 block_c1=0.085 joint_c1=0.081 | split%: 0.33 0.23 0.13 0.27 0.10 | rho_all: 0.46 0.52 0.33 0.35 0.39 | agree 0.30 0.30
+sb0.3_sp7    n= 30 | raw_free=0.076 joint_free=0.072 raw_c1=0.031 block_c1=0.071 joint_c1=0.076 | split%: 0.50 0.23 0.17 0.57 0.20 | rho_all: 0.61 0.61 0.53 0.57 0.57 | agree 0.27 0.33
+sb1.5_sp10   n= 30 | raw_free=0.079 joint_free=0.088 raw_c1=0.064 block_c1=0.097 joint_c1=0.091 | split%: 0.27 0.27 0.20 0.43 0.00 | rho_all: 0.65 0.67 0.61 0.63 0.61 | agree 0.10 0.07
+sb1.5_sp4    n= 30 | raw_free=0.034 joint_free=0.070 raw_c1=0.057 block_c1=0.032 joint_c1=0.085 | split%: 0.50 0.37 0.30 0.53 0.23 | rho_all: 0.45 0.52 0.32 0.35 0.40 | agree 0.10 0.13
+sb1.5_sp7    n= 30 | raw_free=0.061 joint_free=0.054 raw_c1=0.054 block_c1=0.062 joint_c1=0.056 | split%: 0.63 0.43 0.40 0.80 0.30 | rho_all: 0.64 0.65 0.56 0.61 0.61 | agree 0.20 0.27
+sb3.0_sp10   n= 30 | raw_free=0.094 joint_free=0.104 raw_c1=0.094 block_c1=0.091 joint_c1=0.123 | split%: 0.37 0.40 0.30 0.57 0.03 | rho_all: 0.67 0.64 0.59 0.65 0.60 | agree 0.07 0.07
+sb3.0_sp4    n= 30 | raw_free=0.015 joint_free=0.024 raw_c1=0.017 block_c1=0.013 joint_c1=0.026 | split%: 0.47 0.40 0.33 0.53 0.23 | rho_all: 0.35 0.45 0.22 0.27 0.33 | agree 0.13 0.27
+sb3.0_sp7    n= 30 | raw_free=0.026 joint_free=0.062 raw_c1=0.057 block_c1=0.019 joint_c1=0.073 | split%: 0.87 0.27 0.57 0.93 0.13 | rho_all: 0.61 0.62 0.50 0.59 0.59 | agree 0.03 0.17
+POOLED regret (all-pool): raw_free=0.057 joint_free=0.070 raw_c1=0.055 block_c1=0.061 joint_c1=0.079  n= 270
+-- paired differences in relative regret, pool=all (negative = joint_c1 picks better), pooled over cells; sign-flip p descriptive
+   joint_c1 - raw_c1: mean=+0.0238 (sd=0.116, n=270) p~0.000
+   joint_c1 - block_c1: mean=+0.0180 (sd=0.130, n=270) p~0.022
+   joint_c1 - raw_free: mean=+0.0222 (sd=0.118, n=270) p~0.002
+   joint_c1 - joint_free: mean=+0.0086 (sd=0.046, n=270) p~0.002
+   joint_free - raw_free: mean=+0.0136 n=270 p~0.044
+-- paired differences in relative regret, pool=split (negative = joint_c1 picks better), pooled over cells; sign-flip p descriptive
+   joint_c1 - raw_c1: mean=-0.0046 (sd=0.097, n=270) p~0.436
+   joint_c1 - block_c1: mean=-0.0032 (sd=0.081, n=270) p~0.541
+   joint_c1 - raw_free: mean=+0.0123 (sd=0.084, n=270) p~0.015
+   joint_c1 - joint_free: mean=+0.0143 (sd=0.105, n=270) p~0.025
+   joint_free - raw_free: mean=-0.0019 n=270 p~0.717
+-- paired differences in relative regret, pool=birth (negative = joint_c1 picks better), pooled over cells; sign-flip p descriptive
+   joint_c1 - raw_c1: mean=+0.0207 (sd=0.107, n=270) p~0.003
+   joint_c1 - block_c1: mean=+0.0207 (sd=0.107, n=270) p~0.002
+   joint_c1 - raw_free: mean=+0.0207 (sd=0.107, n=270) p~0.001
+   joint_c1 - joint_free: mean=+0.0000 (sd=0.000, n=270) p~1.000
+   joint_free - raw_free: mean=+0.0207 n=270 p~0.001
+-- by blur (pooled over spacing), regret(all-pool) joint_c1 - raw_c1 / joint_c1 - block_c1 / joint_free - raw_free
+   sb=0.3: +0.035 / +0.008 / +0.010
+   sb=1.5: +0.019 / +0.013 / +0.013
+   sb=3.0: +0.018 / +0.033 / +0.018
+-- Spearman(score, realised) mean over scenarios, pooled over cells
+   all: raw_free=0.56 joint_free=0.59 raw_c1=0.47 block_c1=0.51 joint_c1=0.52
+   split: raw_free=0.41 joint_free=0.43 raw_c1=0.06 block_c1=0.23 joint_c1=0.30
+   birth: raw_free=0.54 joint_free=0.54 raw_c1=0.54 block_c1=0.54 joint_c1=0.54
+-- median stationarity ratio (|J'r|/(smax|r|)) per cell: sb0.3_sp10:1e-04 sb0.3_sp4:1e-08 sb0.3_sp7:4e-06 sb1.5_sp10:4e-05 sb1.5_sp4:4e-07 sb1.5_sp7:1e-06 sb3.0_sp10:2e-08 sb3.0_sp4:2e-08 sb3.0_sp7:3e-06

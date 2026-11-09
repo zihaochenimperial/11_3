@@ -1,0 +1,75 @@
+{
+ "dirs": [
+  "outputs/DEBUG-CF-pilot-smoke1"
+ ],
+ "stage": "pilot",
+ "validity": {
+  "V0_contract_hash": false,
+  "V1_unit_tests": true,
+  "V2_replay_bitwise": false,
+  "V3_complete": true,
+  "V4_crn_omega_keys": true,
+  "V5_independence_z<4": true,
+  "_independence_z": {
+   "1": 1.5906562547850263,
+   "2": 1.2498312876326025,
+   "4": 0.7151371996705964
+  },
+  "V6_wall<=3h": true,
+  "V7_finite_consistent": true,
+  "n_units": 8,
+  "all_valid": false
+ },
+ "pilot": {
+  "masked": true,
+  "paired_sd": {
+   "XFERg_t1_vs_RAWy": {
+    "per_image_sd": [
+     0.027405483584017138
+    ],
+    "median_sd": 0.027405483584017138
+   },
+   "XFERg_t2_vs_RAWy": {
+    "per_image_sd": [
+     0.036639456363150726
+    ],
+    "median_sd": 0.036639456363150726
+   },
+   "XFERg_t4_vs_RAWy": {
+    "per_image_sd": [
+     0.03771361175920404
+    ],
+    "median_sd": 0.03771361175920404
+   },
+   "XAVG_t1_vs_RAWy": {
+    "per_image_sd": [
+     0.023218799947322004
+    ],
+    "median_sd": 0.023218799947322004
+   },
+   "XAVG_t1_vs_RAWens2": {
+    "per_image_sd": [
+     0.06077967607607001
+    ],
+    "median_sd": 0.06077967607607001
+   },
+   "XFERg_t4_vs_NS_t4": {
+    "per_image_sd": [
+     0.003206199689138717
+    ],
+    "median_sd": 0.003206199689138717
+   },
+   "XFERg_t4_vs_RAWcv": {
+    "per_image_sd": [
+     0.05010573859279886
+    ],
+    "median_sd": 0.05010573859279886
+   }
+  },
+  "worst_median_sd": 0.06077967607607001,
+  "M_dev": 32,
+  "LIMITED_POWER": true,
+  "rule": "smallest M in {8,16,32} with max_contrast median_i SD / sqrt(M) <= 0.01; else 32 and LIMITED_POWER"
+ },
+ "verdict": "DEBUG-NOT-EVIDENCE:PILOT_OK (M_dev=32, LIMITED_POWER)"
+}

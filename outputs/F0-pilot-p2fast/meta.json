@@ -1,0 +1,119 @@
+{
+ "stage": "pilot",
+ "tag": "p2fast",
+ "debug": false,
+ "started_utc": "2026-11-05T09:46:19Z",
+ "n_tasks": 2674,
+ "workers": 6,
+ "cap_seconds": 1800,
+ "contract_sha256": "8c563f0296376d41e2ca47608bbc9208873f3cb4a809316002d52feb37ff7f25",
+ "impl": "fast",
+ "epsf_full": 0.01,
+ "cfg": {
+  "H": 64,
+  "W": 64,
+  "sigma0": 0.08,
+  "K0": 24,
+  "birth_rounds": 3,
+  "births_per_round": 8,
+  "steps_per_stage": 150,
+  "lr_xy": 0.005,
+  "lr_logscale": 0.02,
+  "lr_rot": 0.02,
+  "lr_val": 0.05,
+  "smooth_sigma_px": 1.5,
+  "init_scale_px": 3.0,
+  "birth_scale_px": 2.0,
+  "S_grid": [
+   8,
+   16,
+   64,
+   256,
+   1024
+  ],
+  "M": 256,
+  "entropy": 20261105,
+  "eps_frozen_rel": 0.01,
+  "plin_grid": 16,
+  "plin_scales_px": [
+   1.5,
+   2.5,
+   4.0,
+   6.0
+  ],
+  "plin_rounds": 3
+ },
+ "cfg_hash": "ed7dd6644753752f",
+ "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "stage_spec": {
+  "images": [
+   "D1"
+  ],
+  "S": [
+   8,
+   1024
+  ],
+  "M": 32,
+  "epsf": [
+   0.003,
+   0.01,
+   0.03
+  ],
+  "anti_M": 32,
+  "mc_rule": "pilot",
+  "n0_M": 32,
+  "n0_mc": true,
+  "n0_epsf": [
+   0.01
+  ],
+  "fixw": 0,
+  "fixM": 0,
+  "sigma_S": [],
+  "conv": false,
+  "plin_images": [
+   "D1",
+   "W0"
+  ],
+  "plin_M": 256,
+  "plin_S": [
+   8,
+   16,
+   64,
+   256,
+   1024
+  ],
+  "plin_epsf": 0.01,
+  "v7_images": [
+   "D1",
+   "W0"
+  ],
+  "v7_n": 8,
+  "det": true
+ },
+ "code_hashes": {
+  "src\\df_est.py": "1d61aacb029d0b35b16b041842eafe2bfdf4af80b2fffb7b86a14a3b2898e125",
+  "src\\f0_config.py": "51a29b22c75ce21bdc6d6072bf2d4f9aee99382e61965b2b87d7033809d0096b",
+  "src\\gsfast.py": "94b12191385d2f537bf748033f51ed5872d0f7947fe3057ff98ec63f2ec0267f",
+  "src\\gsfit.py": "d0413d826865f82ccf359f13b2f1ffbf01c8f453a29ec5530725814e23bc2958",
+  "src\\gskernel.py": "047caafeb008e520a3538d9e94257fef3c0e0ffaab736fd40bde8e2251de06c6",
+  "src\\omega.py": "56e47b632f0e831f6267450b2090f0133b3eaa357b8596535ce9074534480230",
+  "src\\plin.py": "810976da877ac2af0ed9e8246d99d3c0f2cdafd67b41199c5281c110d7d5f90f",
+  "src\\reference_eval.py": "489883417490e133063b68c448facd1752d408f4aa4d3d0ef0b0a57d27af99b2",
+  "src\\synth.py": "10254049a996041c92e3185da5bb89a0e8e52e4954bed0ad38ee64515e8dbce0",
+  "experiments\\f0_analyze.py": "9f11824650b4b961a5bd2d7ba987e60e1f58b0a18f0d384f70284fb883fd2de2",
+  "experiments\\f0_analyze_selftest.py": "c158298303895fad494bbc93728560b4b70462923483407338687dbde0a48c87",
+  "experiments\\f0_run.py": "212bc4da60d65dc47a5ffc49873c3380ecfe8b3e7acc62061a44e92f0856eb78"
+ },
+ "versions": {
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "torch": "2.15.0+cpu"
+ },
+ "finished_utc": "2026-11-05T09:57:28Z",
+ "wall_s": 667.9681885242462,
+ "tasks_done": 2674,
+ "fits_done": 840,
+ "aborted": null,
+ "n_fits_per_s": 1.2575449167060286
+}

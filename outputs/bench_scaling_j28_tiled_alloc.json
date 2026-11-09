@@ -1,0 +1,52 @@
+{
+ "steps_per_fit": 160,
+ "nfit_per_worker": 4,
+ "cpu_count": 20,
+ "runs": [
+  {
+   "impl": "fast",
+   "W": 1,
+   "wall_s": 8.048254800029099,
+   "fits": 4,
+   "fits_per_s": 0.49700215753426913,
+   "mean_fit_s": 0.34286425000755116,
+   "clock_sample": null
+  },
+  {
+   "impl": "fast",
+   "W": 4,
+   "wall_s": 8.038028000039048,
+   "fits": 16,
+   "fits_per_s": 1.9905379777132242,
+   "mean_fit_s": 0.6143149437484681,
+   "clock_sample": null
+  },
+  {
+   "impl": "fast",
+   "W": 8,
+   "wall_s": 8.077244600048289,
+   "fits": 32,
+   "fits_per_s": 3.961747054163581,
+   "mean_fit_s": 1.231213268758438,
+   "clock_sample": null
+  },
+  {
+   "impl": "fast",
+   "W": 14,
+   "wall_s": 10.800001099938527,
+   "fits": 56,
+   "fits_per_s": 5.185184657094039,
+   "mean_fit_s": 2.0937233910725417,
+   "clock_sample": "{\"CurrentClockSpeed\":2300,\"MaxClockSpeed\":2300,\"LoadPercentage\":25}"
+  },
+  {
+   "impl": "fast",
+   "W": 18,
+   "wall_s": 15.240845100022852,
+   "fits": 72,
+   "fits_per_s": 4.724147481814643,
+   "mean_fit_s": 3.063658051386786,
+   "clock_sample": "{\"CurrentClockSpeed\":2300,\"MaxClockSpeed\":2300,\"LoadPercentage\":7}"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "stage": "pilot",
+ "tag": "smoke1",
+ "debug": true,
+ "M": 0,
+ "draws": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "images": [
+  "E15",
+  "E16",
+  "E17",
+  "E18"
+ ],
+ "workers": 2,
+ "cfg": {
+  "H": 64,
+  "W": 64,
+  "sigma0": 0.08,
+  "K0": 24,
+  "birth_rounds": 3,
+  "births_per_round": 8,
+  "steps_per_stage": 5,
+  "lr_xy": 0.005,
+  "lr_logscale": 0.02,
+  "lr_rot": 0.02,
+  "lr_val": 0.05,
+  "smooth_sigma_px": 1.5,
+  "init_scale_px": 3.0,
+  "birth_scale_px": 2.0,
+  "S_grid": [
+   8,
+   16,
+   64,
+   256,
+   1024
+  ],
+  "M": 256,
+  "entropy": 20261105,
+  "eps_frozen_rel": 0.01,
+  "plin_grid": 16,
+  "plin_scales_px": [
+   1.5,
+   2.5,
+   4.0,
+   6.0
+  ],
+  "plin_rounds": 3
+ },
+ "cfg_hash": "e08868aabd022f42",
+ "contract_sha": "MISSING",
+ "entropy": 20261107,
+ "taus": [
+  1.0,
+  2.0,
+  4.0
+ ],
+ "python": "3.12.10",
+ "numpy": "2.5.4",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "start_utc": "2026-11-05T18:21:32Z",
+ "n_tasks": 8,
+ "done": 8,
+ "n_fit_equiv": 142.0,
+ "wall_s": 9.646062135696411,
+ "aborted": false,
+ "replay_ok": null,
+ "end_utc": "2026-11-05T18:21:42Z",
+ "unit_wall_median": 2.337100028991699
+}

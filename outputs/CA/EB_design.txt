@@ -1,0 +1,21 @@
+CA E-B design-stage tables (constructed pairs; sigma=0.020; ambiguous iff rel>=0.15 and d<=3.0)
+
+Line pairs (single wide vs matched-moment two thin): 432 pairs, 16 ambiguous
+  G15: 0/108 ambiguous; orientations with any ambiguous pair: []; min d 0.02 max d 33.46
+  AG: 15/108 ambiguous; orientations with any ambiguous pair: [0, 60, 90, 120, 150]; min d 0.00 max d 68.55
+  MO: 1/108 ambiguous; orientations with any ambiguous pair: [120]; min d 0.01 max d 135.93
+  DK: 0/108 ambiguous; orientations with any ambiguous pair: []; min d 0.02 max d 25.32
+Edge-gap pairs: 80 pairs, 0 ambiguous; by PSF {'G15': 0, 'AG': 0, 'MO': 0, 'DK': 0}
+Texture-orientation pairs: 48 pairs, 7 ambiguous; by PSF {'G15': 1, 'AG': 6, 'MO': 0, 'DK': 0}
+Reparametrisation negative controls: max D_img 0.00e+00, max d 0.00e+00, ambiguous 0 (must be 0)
+Spectra (weakest whitened observability, group tangent space gauge-removed):
+  G15: single_min 3.12..24.8  group_fixed_min 3.33..15.8  group_refit_min 3.08..12.8
+  AG: single_min 0.587..22.7  group_fixed_min 0.438..14.5  group_refit_min 0.324..10
+  MO: single_min 2.77..23.3  group_fixed_min 2.82..15.5  group_refit_min 2.66..11.8
+  DK: single_min 3.13..22.8  group_fixed_min 2.87..15.2  group_refit_min 2.83..11.9
+MC check of Phi(-d/2):
+  psf=AG  ori=120  s=2.6  d=1.03  bayes_formula=0.303  mc_error=0.304  mc_se=0.0023
+  psf=AG  ori=120  s=1.8  d=0.214  bayes_formula=0.457  mc_error=0.458  mc_se=0.00249
+  psf=G15  ori=0  s=2.6  d=11.2  bayes_formula=1.05e-08  mc_error=0  mc_se=0
+  psf=MO  ori=90  s=2.4  d=4.95  bayes_formula=0.00662  mc_error=0.00689  mc_se=0.000414
+  psf=DK  ori=60  s=2.8  d=16.9  bayes_formula=0  mc_error=0  mc_se=0

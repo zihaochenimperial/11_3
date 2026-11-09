@@ -1,0 +1,96 @@
+{
+ "phase": "s0",
+ "n_runs": 8,
+ "problems": [
+  [
+   302,
+   "C1",
+   "L"
+  ],
+  [
+   302,
+   "C4",
+   "L"
+  ],
+  [
+   303,
+   "C1",
+   "L"
+  ],
+  [
+   303,
+   "C4",
+   "L"
+  ],
+  [
+   304,
+   "C1",
+   "L"
+  ],
+  [
+   304,
+   "C4",
+   "L"
+  ],
+  [
+   305,
+   "C1",
+   "L"
+  ],
+  [
+   305,
+   "C4",
+   "L"
+  ]
+ ],
+ "summary": [
+  {
+   "arm": "D0w",
+   "kappa0": 0.1,
+   "f": 3,
+   "eps_r": 0.1,
+   "n": 8,
+   "cens": 0.0,
+   "W_median": 149969285310.0,
+   "gap_median": 0.0,
+   "f_iter": 0.9477190907561396,
+   "f_asm": 0.010792829592342588,
+   "f_asm_cached": 0.010792829592342588,
+   "mv_per_outer_med": 42.0,
+   "rej_per_outer": 0.8564593301435407
+  }
+ ],
+ "best": {
+  "D0w": {
+   "arm": "D0w",
+   "kappa0": 0.1,
+   "f": 3,
+   "eps_r": 0.1,
+   "n": 8,
+   "cens": 0.0,
+   "W_median": 149969285310.0,
+   "gap_median": 0.0,
+   "f_iter": 0.9477190907561396,
+   "f_asm": 0.010792829592342588,
+   "f_asm_cached": 0.010792829592342588,
+   "mv_per_outer_med": 42.0,
+   "rej_per_outer": 0.8564593301435407
+  }
+ },
+ "bstar": {
+  "arm": "D0w",
+  "kappa0": 0.1,
+  "f": 3,
+  "eps_r": 0.1,
+  "n": 8,
+  "cens": 0.0,
+  "W_median": 149969285310.0,
+  "gap_median": 0.0,
+  "f_iter": 0.9477190907561396,
+  "f_asm": 0.010792829592342588,
+  "f_asm_cached": 0.010792829592342588,
+  "mv_per_outer_med": 42.0,
+  "rej_per_outer": 0.8564593301435407
+ },
+ "note": "F_ref^sel = min final F over this stage runs per problem (selection only; contract v1.2 section 6)"
+}

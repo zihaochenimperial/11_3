@@ -1,0 +1,76 @@
+{
+ "n_units": 16,
+ "arms": {
+  "BLOCK": {
+   "n": 4,
+   "wall_mean": 13.501665771007538,
+   "wall_max": 16.066958904266357,
+   "wall_min": 12.357927322387695,
+   "score_s_total": 7.121311902999878,
+   "refit_s_total": 46.56478214263916,
+   "n_trials_max": 0,
+   "lm_capped_steps": 0,
+   "clamped_parent_total": 603,
+   "below_floor_total": 1106,
+   "stat_all_finite": true
+  },
+  "JOINT": {
+   "n": 4,
+   "wall_mean": 82.51172667741776,
+   "wall_max": 91.9208152294159,
+   "wall_min": 65.97125506401062,
+   "score_s_total": 9.81366229057312,
+   "refit_s_total": 55.715593576431274,
+   "n_trials_max": 0,
+   "lm_capped_steps": 0,
+   "clamped_parent_total": 614,
+   "below_floor_total": 1095,
+   "stat_all_finite": true
+  },
+  "OMP": {
+   "n": 4,
+   "wall_mean": 10.821922600269318,
+   "wall_max": 13.712230443954468,
+   "wall_min": 9.400167465209961,
+   "score_s_total": 5.65372896194458,
+   "refit_s_total": 37.42298769950867,
+   "n_trials_max": 0,
+   "lm_capped_steps": 0,
+   "clamped_parent_total": 589,
+   "below_floor_total": 1175,
+   "stat_all_finite": true
+  },
+  "ORACLE_y_full": {
+   "n": 4,
+   "wall_mean": 736.5656054019928,
+   "wall_max": 800.0473453998566,
+   "wall_min": 695.0094029903412,
+   "n_trials_max": 124,
+   "lm_capped_steps": 0,
+   "clamped_parent_total": 0,
+   "below_floor_total": 0,
+   "stat_all_finite": null
+  }
+ },
+ "V16": {
+  "units": 4,
+  "mismatches": 0
+ },
+ "V10_stable_rate": 0.9666666666666667,
+ "V10_n": 120,
+ "S2_budget_projection_cpu_seconds": {
+  "rules": 25182.50945663452,
+  "variants": 9807.270831298827,
+  "fixedk": 4533.401758367365,
+  "initn": 3502.596725463867,
+  "dose": 2564.0475611686707,
+  "oracle_s": 29467.111429387875,
+  "oracle_full6": 4419.393632411957,
+  "oracle_full_ext6": 4419.393632411957,
+  "oracle_x_full_conditional12": 8838.787264823914,
+  "total_unconditional_cpu_h": 22.076758720759187,
+  "wall_h_at_6_procs": 3.6794597867931977,
+  "with_ext_and_conditional_cpu_h": 25.759586747769152,
+  "host_over_VM_ratio": 1.9676222909580579
+ }
+}

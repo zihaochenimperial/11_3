@@ -1,0 +1,482 @@
+{
+ "811": {
+  "level": "hi",
+  "rep_psnr": 32.18695937507999,
+  "psf": {
+   "G15": {
+    "n_pairs": 62,
+    "n_amb": 1,
+    "n_skipped_signed": 38,
+    "min_d": 2.5278717489377405
+   },
+   "AG": {
+    "n_pairs": 62,
+    "n_amb": 5,
+    "n_skipped_signed": 38,
+    "min_d": 1.3960493144758073
+   },
+   "MO": {
+    "n_pairs": 62,
+    "n_amb": 2,
+    "n_skipped_signed": 38,
+    "min_d": 2.2549472437676346
+   },
+   "DK": {
+    "n_pairs": 62,
+    "n_amb": 1,
+    "n_skipped_signed": 38,
+    "min_d": 2.3329352233602814
+   }
+  }
+ },
+ "812": {
+  "level": "hi",
+  "rep_psnr": 28.196909298001735,
+  "psf": {
+   "G15": {
+    "n_pairs": 42,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 10.214180843625027
+   },
+   "AG": {
+    "n_pairs": 42,
+    "n_amb": 1,
+    "n_skipped_signed": 0,
+    "min_d": 2.9482316801155752
+   },
+   "MO": {
+    "n_pairs": 42,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 5.26618412482957
+   },
+   "DK": {
+    "n_pairs": 42,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 8.014405510078133
+   }
+  }
+ },
+ "813": {
+  "level": "hi",
+  "rep_psnr": 29.603435013242052,
+  "psf": {
+   "G15": {
+    "n_pairs": 46,
+    "n_amb": 2,
+    "n_skipped_signed": 30,
+    "min_d": 1.746451986712666
+   },
+   "AG": {
+    "n_pairs": 46,
+    "n_amb": 1,
+    "n_skipped_signed": 30,
+    "min_d": 1.4762842768085374
+   },
+   "MO": {
+    "n_pairs": 46,
+    "n_amb": 0,
+    "n_skipped_signed": 30,
+    "min_d": 3.590878925162384
+   },
+   "DK": {
+    "n_pairs": 46,
+    "n_amb": 3,
+    "n_skipped_signed": 30,
+    "min_d": 1.8430429145813778
+   }
+  }
+ },
+ "814": {
+  "level": "hi",
+  "rep_psnr": 26.060288777824713,
+  "psf": {
+   "G15": {
+    "n_pairs": 29,
+    "n_amb": 0,
+    "n_skipped_signed": 17,
+    "min_d": 27.141002685868504
+   },
+   "AG": {
+    "n_pairs": 29,
+    "n_amb": 0,
+    "n_skipped_signed": 17,
+    "min_d": 23.64679026036687
+   },
+   "MO": {
+    "n_pairs": 29,
+    "n_amb": 0,
+    "n_skipped_signed": 17,
+    "min_d": 29.895365499805635
+   },
+   "DK": {
+    "n_pairs": 29,
+    "n_amb": 0,
+    "n_skipped_signed": 17,
+    "min_d": 23.183168432455755
+   }
+  }
+ },
+ "815": {
+  "level": "hi",
+  "rep_psnr": 31.833495204751987,
+  "psf": {
+   "G15": {
+    "n_pairs": 54,
+    "n_amb": 0,
+    "n_skipped_signed": 24,
+    "min_d": 3.524141102513184
+   },
+   "AG": {
+    "n_pairs": 54,
+    "n_amb": 3,
+    "n_skipped_signed": 24,
+    "min_d": 1.8172815051962963
+   },
+   "MO": {
+    "n_pairs": 54,
+    "n_amb": 1,
+    "n_skipped_signed": 24,
+    "min_d": 2.3941843317103926
+   },
+   "DK": {
+    "n_pairs": 54,
+    "n_amb": 1,
+    "n_skipped_signed": 24,
+    "min_d": 2.9932821157479883
+   }
+  }
+ },
+ "816": {
+  "level": "hi",
+  "rep_psnr": 32.33178928491166,
+  "psf": {
+   "G15": {
+    "n_pairs": 27,
+    "n_amb": 0,
+    "n_skipped_signed": 34,
+    "min_d": 9.610077558262313
+   },
+   "AG": {
+    "n_pairs": 27,
+    "n_amb": 2,
+    "n_skipped_signed": 34,
+    "min_d": 1.6162454080982493
+   },
+   "MO": {
+    "n_pairs": 27,
+    "n_amb": 0,
+    "n_skipped_signed": 34,
+    "min_d": 4.643216090826184
+   },
+   "DK": {
+    "n_pairs": 27,
+    "n_amb": 0,
+    "n_skipped_signed": 34,
+    "min_d": 7.9936493933041985
+   }
+  }
+ },
+ "817": {
+  "level": "hi",
+  "rep_psnr": 30.36885534482279,
+  "psf": {
+   "G15": {
+    "n_pairs": 51,
+    "n_amb": 2,
+    "n_skipped_signed": 27,
+    "min_d": 2.272005564652101
+   },
+   "AG": {
+    "n_pairs": 51,
+    "n_amb": 5,
+    "n_skipped_signed": 27,
+    "min_d": 0.736273468081006
+   },
+   "MO": {
+    "n_pairs": 51,
+    "n_amb": 1,
+    "n_skipped_signed": 27,
+    "min_d": 2.476808563778074
+   },
+   "DK": {
+    "n_pairs": 51,
+    "n_amb": 4,
+    "n_skipped_signed": 27,
+    "min_d": 2.051600063924421
+   }
+  }
+ },
+ "818": {
+  "level": "hi",
+  "rep_psnr": 27.250778621705088,
+  "psf": {
+   "G15": {
+    "n_pairs": 31,
+    "n_amb": 0,
+    "n_skipped_signed": 26,
+    "min_d": 12.939572887976933
+   },
+   "AG": {
+    "n_pairs": 31,
+    "n_amb": 0,
+    "n_skipped_signed": 26,
+    "min_d": 6.378864288149916
+   },
+   "MO": {
+    "n_pairs": 31,
+    "n_amb": 0,
+    "n_skipped_signed": 26,
+    "min_d": 7.794778885088703
+   },
+   "DK": {
+    "n_pairs": 31,
+    "n_amb": 0,
+    "n_skipped_signed": 26,
+    "min_d": 11.168358109493521
+   }
+  }
+ },
+ "819": {
+  "level": "hi",
+  "rep_psnr": 34.16149129851124,
+  "psf": {
+   "G15": {
+    "n_pairs": 70,
+    "n_amb": 3,
+    "n_skipped_signed": 0,
+    "min_d": 2.11218358503518
+   },
+   "AG": {
+    "n_pairs": 70,
+    "n_amb": 13,
+    "n_skipped_signed": 0,
+    "min_d": 0.41699079760107666
+   },
+   "MO": {
+    "n_pairs": 70,
+    "n_amb": 4,
+    "n_skipped_signed": 0,
+    "min_d": 1.6603882900567672
+   },
+   "DK": {
+    "n_pairs": 70,
+    "n_amb": 5,
+    "n_skipped_signed": 0,
+    "min_d": 1.7491397194831277
+   }
+  }
+ },
+ "820": {
+  "level": "hi",
+  "rep_psnr": 34.658382561550084,
+  "psf": {
+   "G15": {
+    "n_pairs": 35,
+    "n_amb": 0,
+    "n_skipped_signed": 35,
+    "min_d": 5.074365370926846
+   },
+   "AG": {
+    "n_pairs": 35,
+    "n_amb": 0,
+    "n_skipped_signed": 35,
+    "min_d": 3.7256869985243792
+   },
+   "MO": {
+    "n_pairs": 35,
+    "n_amb": 0,
+    "n_skipped_signed": 35,
+    "min_d": 3.713081373497752
+   },
+   "DK": {
+    "n_pairs": 35,
+    "n_amb": 0,
+    "n_skipped_signed": 35,
+    "min_d": 4.7065465602561165
+   }
+  }
+ },
+ "821": {
+  "level": "hi",
+  "rep_psnr": 30.637646312041774,
+  "psf": {
+   "G15": {
+    "n_pairs": 77,
+    "n_amb": 7,
+    "n_skipped_signed": 0,
+    "min_d": 1.5094794300549614
+   },
+   "AG": {
+    "n_pairs": 77,
+    "n_amb": 12,
+    "n_skipped_signed": 0,
+    "min_d": 0.7710621242307428
+   },
+   "MO": {
+    "n_pairs": 77,
+    "n_amb": 6,
+    "n_skipped_signed": 0,
+    "min_d": 0.7577198737649091
+   },
+   "DK": {
+    "n_pairs": 77,
+    "n_amb": 9,
+    "n_skipped_signed": 0,
+    "min_d": 1.3413473242770206
+   }
+  }
+ },
+ "822": {
+  "level": "hi",
+  "rep_psnr": 35.736378593894216,
+  "psf": {
+   "G15": {
+    "n_pairs": 39,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 1.2411211742645494
+   },
+   "AG": {
+    "n_pairs": 39,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 1.0260419586344236
+   },
+   "MO": {
+    "n_pairs": 39,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 1.222475928942833
+   },
+   "DK": {
+    "n_pairs": 39,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 1.1578436390566986
+   }
+  }
+ },
+ "823": {
+  "level": "hi",
+  "rep_psnr": 30.800577053164268,
+  "psf": {
+   "G15": {
+    "n_pairs": 65,
+    "n_amb": 0,
+    "n_skipped_signed": 24,
+    "min_d": 5.1309964649127835
+   },
+   "AG": {
+    "n_pairs": 65,
+    "n_amb": 0,
+    "n_skipped_signed": 24,
+    "min_d": 3.0045515065188946
+   },
+   "MO": {
+    "n_pairs": 65,
+    "n_amb": 0,
+    "n_skipped_signed": 24,
+    "min_d": 3.4808747802300393
+   },
+   "DK": {
+    "n_pairs": 65,
+    "n_amb": 0,
+    "n_skipped_signed": 24,
+    "min_d": 4.1137829778100725
+   }
+  }
+ },
+ "824": {
+  "level": "hi",
+  "rep_psnr": 27.839142820085737,
+  "psf": {
+   "G15": {
+    "n_pairs": 41,
+    "n_amb": 0,
+    "n_skipped_signed": 26,
+    "min_d": 8.115229539251187
+   },
+   "AG": {
+    "n_pairs": 41,
+    "n_amb": 0,
+    "n_skipped_signed": 26,
+    "min_d": 4.32528406807589
+   },
+   "MO": {
+    "n_pairs": 41,
+    "n_amb": 0,
+    "n_skipped_signed": 26,
+    "min_d": 5.043613369917114
+   },
+   "DK": {
+    "n_pairs": 41,
+    "n_amb": 0,
+    "n_skipped_signed": 26,
+    "min_d": 7.076539568251644
+   }
+  }
+ },
+ "825": {
+  "level": "hi",
+  "rep_psnr": 29.86719047015469,
+  "psf": {
+   "G15": {
+    "n_pairs": 61,
+    "n_amb": 7,
+    "n_skipped_signed": 0,
+    "min_d": 0.9690640538474294
+   },
+   "AG": {
+    "n_pairs": 61,
+    "n_amb": 15,
+    "n_skipped_signed": 0,
+    "min_d": 0.4100010613576749
+   },
+   "MO": {
+    "n_pairs": 61,
+    "n_amb": 4,
+    "n_skipped_signed": 0,
+    "min_d": 1.3599081132114046
+   },
+   "DK": {
+    "n_pairs": 61,
+    "n_amb": 9,
+    "n_skipped_signed": 0,
+    "min_d": 1.2797747410028428
+   }
+  }
+ },
+ "826": {
+  "level": "hi",
+  "rep_psnr": 27.691088613802954,
+  "psf": {
+   "G15": {
+    "n_pairs": 55,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 6.8383189146336845
+   },
+   "AG": {
+    "n_pairs": 55,
+    "n_amb": 1,
+    "n_skipped_signed": 0,
+    "min_d": 1.85696146230388
+   },
+   "MO": {
+    "n_pairs": 55,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 3.507454971143736
+   },
+   "DK": {
+    "n_pairs": 55,
+    "n_amb": 0,
+    "n_skipped_signed": 0,
+    "min_d": 5.173172129571299
+   }
+  }
+ }
+}

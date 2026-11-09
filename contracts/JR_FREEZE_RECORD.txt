@@ -1,0 +1,20 @@
+# JR freeze record (append-only). Contract JR v1 = candidate v0 + Opus R1-R9.
+2026-11-08T22:12:14Z CONTRACT_FROZEN contracts/JR_CONTRACT.md sha256=e9b9087c4626e6be0af37dca4eb28b8c70b1305c91d5516315ca1e353300914d (Opus review: research/notes/OPUS_REVIEW_JR_CONTRACT_v0_20261108.md, runlog 20261108T215538Z-model-call-2985; Opus: freeze after R1-R9, no re-review)
+AUTHORIZATION memory/AUTHORIZATIONS.md (human via Codex relay, 2026-11-08 ~21:2xZ): start new JR line; CPU only; no paid usage; "停" stops.
+MODULE_SHA256 1f3690452148eba8caa272a85e605bf3db438a91f6586a0990e8640f070ec725 jr_core.py
+MODULE_SHA256 d8e3399ed407697d5b196cc296e02b4a163ed24a9acc4aeda5172d88021cebd3 jr_gen.py
+MODULE_SHA256 406ee2c895204c3762713bc146aec212a87b05d746639e279c7a32c5060009f1 jr_op.py
+ANALYZER_SHA256 4bec113fbda2d3a5e0ba9b6deeb7bbdde30bc16889a46da2cd5ea94b6e954fee jr_run.py
+REDUCER_SHA256 e8c01f4b109dbe9d6ddecc878bf3cadeda3cfb5cd63ae462f739ea631c5472a5 jr_reduce.py
+REFERENCE_SHA256 e9da8191d3be1a753203b41286d099ca2a888b67129a68a7ca18c5cd517597ea trn_same_state_reduce.py (bca)
+TEST_SHA256 983900f9cbb5c38cbb3a292902bb8a2a19f992ce58a633d9f9e05384dcb21f27 tests/test_jr_core.py (13 tests pass)
+SEALED VERIFY 511-522, VERIFY2 701-712 (gate: jr_gen._sealed_gate). DRY outputs/JR/dry (590-592) = pipeline test only.
+2026-11-09T00:46:56Z TUNE_DONE outputs/JR/tune/selection.json sha256=efba89ac971aefd63dcafd7e96b5ac8397eb26420ca9c2ba10f0c62186cca384 ; 1032 runs (T1 552 + T2 144 + T3 288 + RIDGE 48 descriptive); tune CPU-h (sum run walls) 3.12; all 7 final configs sit at a grid edge (gs=2 or IND1 kappa0=0.01 etc.): recorded, not extended (contract section 5). Container restarts at ~23:12Z and ~00:07Z interrupted the pipeline; runner resumed from existing outputs (no run discarded; JSON validated).
+2026-11-09T00:46:56Z VERIFY_UNSEALED by Sonnet 5.5 main per contract section 2; single read by experiments/jr_run.py --stage verify (parent opens gate, forked workers inherit); frozen module/analyzer shas re-verified equal to the lines above at this time.
+NOTE 2026-11-09T00:48:44Z FORMAT_FIX: the gate (jr_gen._sealed_gate) matches lines by line-start; the two lines above that begin with a timestamp were not recognised, the first VERIFY launch (pid at ~00:48Z) was refused at the gate with AssertionError "no TUNE_DONE line" before any VERIFY image was synthesised and before any VERIFY_CONSUMED line (0 outputs in outputs/JR/verify). The next two lines restate the same facts in the gate format; no module, analyzer, contract or selection change.
+TUNE_DONE 2026-11-09T00:48:44Z outputs/JR/tune/selection.json sha256=efba89ac971aefd63dcafd7e96b5ac8397eb26420ca9c2ba10f0c62186cca384 (restated in gate format; original timestamped line above)
+VERIFY_UNSEALED 2026-11-09T00:48:44Z by Sonnet 5.5 main per contract section 2 (restated in gate format); single read by experiments/jr_run.py --stage verify; no resume line needed because no VERIFY_CONSUMED exists yet
+VERIFY_CONSUMED 2026-11-09T00:48:50Z pid=477 sha=4bec113fbda2d3a5e0ba9b6deeb7bbdde30bc16889a46da2cd5ea94b6e954fee
+NOTE 2026-11-09T01:29:13Z POST_VERIFY_CHECK (Opus terminal R-JT1, run 20261109T012620Z-model-call-a694): after the refused first launch outputs/JR/verify/ held no JSON; the first output (511_AG__OBS-J) was written 2026-11-09T00:48:59Z, after VERIFY_CONSUMED 00:48:50Z; the two restated lines were written by the same executor and changed no sha (jr_core 1f369045, jr_gen d8e3399e, jr_op 406ee2c8, jr_run 4bec113f, jr_reduce e8c01f4b unchanged at read time and at reduce time).
+DECISION 2026-11-09T01:29:13Z VERIFY_REDUCE outputs/JR/verify_REDUCE.json decision=STOP (frozen rule, contract section 9); reducer sha e8c01f4b109dbe9d6ddecc878bf3cadeda3cfb5cd63ae462f739ea631c5472a5.
+POSTHOC_SHA256 f054db56f8a8e8f8b361ba9eaedffa6d822dfacea5771a411f6ba677bf73be96 experiments/jr_post_tables.py (descriptive per-image/per-PSF tables; imports frozen reducer functions; no decision role)

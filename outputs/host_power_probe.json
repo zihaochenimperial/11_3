@@ -1,0 +1,22 @@
+{
+ "powercfg_active": "\u7535\u6e90\u65b9\u6848 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (\u5e73\u8861)",
+ "battery": "{\"BatteryStatus\":2,\"EstimatedChargeRemaining\":100,\"EstimatedRunTime\":71582788}",
+ "power_status_kernel32": {
+  "ACLineStatus": 1,
+  "BatteryFlag": 1,
+  "BatteryLifePercent": 100,
+  "SystemStatusFlag": 0
+ },
+ "processor": "{\"Name\":\"12th Gen Intel(R) Core(TM) i7-12700H\",\"NumberOfCores\":14,\"NumberOfLogicalProcessors\":20,\"CurrentClockSpeed\":2300,\"MaxClockSpeed\":2300}",
+ "power_mode_overlay": "{\"ActiveOverlayAcPowerScheme\":\"ded574b5-45a0-4f42-8737-46345c09c238\",\"ActiveOverlayDcPowerScheme\":\"ded574b5-45a0-4f42-8737-46345c09c238\"}",
+ "proc_throttle_max_ac_dc": ": 381b4222-f694-41f0-9685-ff5bb260df2e  (\u5e73\u8861)\n  GUID \u522b\u540d: SCHEME_BALANCED\n  \u5b50\u7ec4 GUID: 54533251-82be-4824-96c1-47b60b740d00  (\u5904\u7406\u5668\u7535\u6e90\u7ba1\u7406)\n    GUID \u522b\u540d: SUB_PROCESSOR\n    \u7535\u6e90\u8bbe\u7f6e GUID: bc5038f7-23e0-4960-96da-33abaf5935ec  (\u6700\u5927\u5904\u7406\u5668\u72b6\u6001)\n      GUID \u522b\u540d: PROCTHROTTLEMAX\n      \u6700\u5c0f\u53ef\u80fd\u7684\u8bbe\u7f6e: 0x00000000\n      \u6700\u5927\u53ef\u80fd\u7684\u8bbe\u7f6e: 0x00000064\n      \u53ef\u80fd\u7684\u8bbe\u7f6e\u589e\u91cf: 0x00000001\n      \u53ef\u80fd\u7684\u8bbe\u7f6e\u5355\u4f4d: %\n    \u5f53\u524d\u4ea4\u6d41\u7535\u6e90\u8bbe\u7f6e\u7d22\u5f15: 0x00000064\n    \u5f53\u524d\u76f4\u6d41\u7535\u6e90\u8bbe\u7f6e\u7d22\u5f15: 0x00000064",
+ "proc_boost_mode": "\u7535\u6e90\u65b9\u6848 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (\u5e73\u8861)\n  GUID \u522b\u540d: SCHEME_BALANCED",
+ "priority_class_hex": "0x0",
+ "affinity_mask": "0b0",
+ "system_mask": "0b0",
+ "power_throttling_query": {
+  "ok": 0,
+  "Control": 0,
+  "State": 0
+ }
+}

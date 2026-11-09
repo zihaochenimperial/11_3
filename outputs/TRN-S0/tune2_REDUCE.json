@@ -1,0 +1,266 @@
+{
+ "phase": "tune2",
+ "n_runs": 108,
+ "problems": [
+  [
+   301,
+   "C1",
+   "M"
+  ],
+  [
+   301,
+   "C4",
+   "M"
+  ],
+  [
+   302,
+   "C1",
+   "M"
+  ],
+  [
+   302,
+   "C4",
+   "M"
+  ],
+  [
+   303,
+   "C1",
+   "M"
+  ],
+  [
+   303,
+   "C4",
+   "M"
+  ],
+  [
+   304,
+   "C1",
+   "M"
+  ],
+  [
+   304,
+   "C4",
+   "M"
+  ],
+  [
+   305,
+   "C1",
+   "M"
+  ],
+  [
+   305,
+   "C4",
+   "M"
+  ],
+  [
+   306,
+   "C1",
+   "M"
+  ],
+  [
+   306,
+   "C4",
+   "M"
+  ]
+ ],
+ "summary": [
+  {
+   "arm": "D0w",
+   "kappa0": 0.1,
+   "f": 3,
+   "eps_r": 0.1,
+   "n": 12,
+   "cens": 0.3333333333333333,
+   "W_median": 44329764274.0,
+   "gap_median": 1.0477763279229468e-05,
+   "f_iter": 0.9419968596881461,
+   "f_asm": 0.020159205990226896,
+   "f_asm_cached": 0.020159205990226896,
+   "mv_per_outer_med": 51.0,
+   "rej_per_outer": 0.8497398959583834
+  },
+  {
+   "arm": "D0",
+   "kappa0": 1.0,
+   "f": 3,
+   "eps_r": 0.1,
+   "n": 12,
+   "cens": 0.3333333333333333,
+   "W_median": 81894385170.0,
+   "gap_median": 0.0008142335495224181,
+   "f_iter": 0.9600161978008617,
+   "f_asm": 0.01278289399207106,
+   "f_asm_cached": 0.01278289399207106,
+   "mv_per_outer_med": 134.75,
+   "rej_per_outer": 0.9589430894308943
+  },
+  {
+   "arm": "D0",
+   "kappa0": 1.0,
+   "f": 3,
+   "eps_r": 0.001,
+   "n": 12,
+   "cens": 0.5,
+   "W_median": Infinity,
+   "gap_median": 0.0011038974431455263,
+   "f_iter": 0.9888511916545757,
+   "f_asm": 0.003505417171984093,
+   "f_asm_cached": 0.003505417171984093,
+   "mv_per_outer_med": 600.0,
+   "rej_per_outer": 0.8575274725274725
+  },
+  {
+   "arm": "D0",
+   "kappa0": 1.0,
+   "f": 3,
+   "eps_r": 0.01,
+   "n": 12,
+   "cens": 0.5833333333333334,
+   "W_median": Infinity,
+   "gap_median": 0.001094391982439289,
+   "f_iter": 0.9816033090229719,
+   "f_asm": 0.005451271715335505,
+   "f_asm_cached": 0.005451271715335505,
+   "mv_per_outer_med": 397.0,
+   "rej_per_outer": 0.9587628865979382
+  },
+  {
+   "arm": "D0w",
+   "kappa0": 0.1,
+   "f": 3,
+   "eps_r": 0.01,
+   "n": 12,
+   "cens": 0.6666666666666666,
+   "W_median": Infinity,
+   "gap_median": 0.0016995090703198392,
+   "f_iter": 0.9822457455184266,
+   "f_asm": 0.005597709770122036,
+   "f_asm_cached": 0.005597709770122036,
+   "mv_per_outer_med": 371.5,
+   "rej_per_outer": 0.9878048780487805
+  },
+  {
+   "arm": "D0w",
+   "kappa0": 0.1,
+   "f": 3,
+   "eps_r": 0.001,
+   "n": 12,
+   "cens": 0.75,
+   "W_median": Infinity,
+   "gap_median": 0.0032797645466392106,
+   "f_iter": 0.989168773001852,
+   "f_asm": 0.0034042351428222872,
+   "f_asm_cached": 0.0034042351428222872,
+   "mv_per_outer_med": 800.0,
+   "rej_per_outer": 0.9883720930232558
+  },
+  {
+   "arm": "D0b",
+   "kappa0": 0.01,
+   "f": 3,
+   "eps_r": 0.001,
+   "n": 12,
+   "cens": 1.0,
+   "W_median": Infinity,
+   "gap_median": 0.006992721101761903,
+   "f_iter": NaN,
+   "f_asm": NaN,
+   "f_asm_cached": NaN,
+   "mv_per_outer_med": NaN,
+   "rej_per_outer": NaN
+  },
+  {
+   "arm": "D0b",
+   "kappa0": 0.01,
+   "f": 3,
+   "eps_r": 0.01,
+   "n": 12,
+   "cens": 1.0,
+   "W_median": Infinity,
+   "gap_median": 0.010496322427749337,
+   "f_iter": NaN,
+   "f_asm": NaN,
+   "f_asm_cached": NaN,
+   "mv_per_outer_med": NaN,
+   "rej_per_outer": NaN
+  },
+  {
+   "arm": "D0b",
+   "kappa0": 0.01,
+   "f": 3,
+   "eps_r": 0.1,
+   "n": 12,
+   "cens": 1.0,
+   "W_median": Infinity,
+   "gap_median": 0.012827879083869951,
+   "f_iter": NaN,
+   "f_asm": NaN,
+   "f_asm_cached": NaN,
+   "mv_per_outer_med": NaN,
+   "rej_per_outer": NaN
+  }
+ ],
+ "best": {
+  "D0w": {
+   "arm": "D0w",
+   "kappa0": 0.1,
+   "f": 3,
+   "eps_r": 0.1,
+   "n": 12,
+   "cens": 0.3333333333333333,
+   "W_median": 44329764274.0,
+   "gap_median": 1.0477763279229468e-05,
+   "f_iter": 0.9419968596881461,
+   "f_asm": 0.020159205990226896,
+   "f_asm_cached": 0.020159205990226896,
+   "mv_per_outer_med": 51.0,
+   "rej_per_outer": 0.8497398959583834
+  },
+  "D0": {
+   "arm": "D0",
+   "kappa0": 1.0,
+   "f": 3,
+   "eps_r": 0.1,
+   "n": 12,
+   "cens": 0.3333333333333333,
+   "W_median": 81894385170.0,
+   "gap_median": 0.0008142335495224181,
+   "f_iter": 0.9600161978008617,
+   "f_asm": 0.01278289399207106,
+   "f_asm_cached": 0.01278289399207106,
+   "mv_per_outer_med": 134.75,
+   "rej_per_outer": 0.9589430894308943
+  },
+  "D0b": {
+   "arm": "D0b",
+   "kappa0": 0.01,
+   "f": 3,
+   "eps_r": 0.001,
+   "n": 12,
+   "cens": 1.0,
+   "W_median": Infinity,
+   "gap_median": 0.006992721101761903,
+   "f_iter": NaN,
+   "f_asm": NaN,
+   "f_asm_cached": NaN,
+   "mv_per_outer_med": NaN,
+   "rej_per_outer": NaN
+  }
+ },
+ "bstar": {
+  "arm": "D0w",
+  "kappa0": 0.1,
+  "f": 3,
+  "eps_r": 0.1,
+  "n": 12,
+  "cens": 0.3333333333333333,
+  "W_median": 44329764274.0,
+  "gap_median": 1.0477763279229468e-05,
+  "f_iter": 0.9419968596881461,
+  "f_asm": 0.020159205990226896,
+  "f_asm_cached": 0.020159205990226896,
+  "mv_per_outer_med": 51.0,
+  "rej_per_outer": 0.8497398959583834
+ },
+ "note": "F_ref^sel = min final F over this stage runs per problem (selection only; contract v1.2 section 6)"
+}

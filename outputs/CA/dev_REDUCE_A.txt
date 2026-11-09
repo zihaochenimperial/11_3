@@ -1,0 +1,5 @@
+CA block A (DEV-only, descriptive): OBS-J - RND-J in the noisy cells at a=1e-3/SN^2 (block P) vs a=1e-2/SN^2 (block A); 8 images
+  R0 noisy a=1e-3: Q -0.381  peak -0.071  end -0.579  logWpeak -0.176
+  R0 noisy a=1e-2: Q -0.061  peak +0.090  end +0.057  logWpeak -0.084
+  R1 noisy a=1e-3: Q -0.444  peak -0.132  end -0.668  logWpeak -0.237
+  R1 noisy a=1e-2: Q +0.023  peak +0.240  end +0.198  logWpeak -0.057

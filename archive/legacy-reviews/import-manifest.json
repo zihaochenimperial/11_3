@@ -1,0 +1,32 @@
+[
+  {
+    "source": "C:\\Users\\USER\\Desktop\\P1817_P1901_research\\runs\\p1817_repair_20261105\\codex-integrated-review.md",
+    "target": "D:\\Gaussian\\archive\\legacy-reviews\\codex-integrated-review.md",
+    "sha256": "E652534BBC02416E65D2C7FB1BBDC3975E2954D5422728C26BF77B040595E9F6",
+    "source_sha256": "E652534BBC02416E65D2C7FB1BBDC3975E2954D5422728C26BF77B040595E9F6"
+  },
+  {
+    "source": "C:\\Users\\USER\\Desktop\\P1817_P1901_research\\runs\\p1817_holdout_birth_20261104\\codex-preflight.md",
+    "target": "D:\\Gaussian\\archive\\legacy-reviews\\codex-original-preflight.md",
+    "sha256": "EA057EB2AEED4FC2DD6FF5599B89E1E4E133F9376CBAE843E4EDAAA3748DA2AB",
+    "source_sha256": "EA057EB2AEED4FC2DD6FF5599B89E1E4E133F9376CBAE843E4EDAAA3748DA2AB"
+  },
+  {
+    "source": "C:\\Users\\USER\\Desktop\\P1817_P1901_research\\runs\\claude_research\\p1817_opus_preflight_20261105\\recovered-review.md",
+    "target": "D:\\Gaussian\\archive\\legacy-reviews\\claude-opus-original-preflight.md",
+    "sha256": "2B939C4D3BD5156C90850A6112AF8F34DF936A8525EC5E15FAF6CEAD56AFDBB0",
+    "source_sha256": "2B939C4D3BD5156C90850A6112AF8F34DF936A8525EC5E15FAF6CEAD56AFDBB0"
+  },
+  {
+    "source": "C:\\Users\\USER\\Desktop\\P1817_P1901_research\\runs\\claude_research\\p1817_phd_novelty_20261105\\review.md",
+    "target": "D:\\Gaussian\\archive\\legacy-reviews\\claude-opus-phd-review-v1.md",
+    "sha256": "726B9AE2DC1819C708EDA2176BBCDC2E1AB7F626D7AE36E75D214B20A938E767",
+    "source_sha256": "726B9AE2DC1819C708EDA2176BBCDC2E1AB7F626D7AE36E75D214B20A938E767"
+  },
+  {
+    "source": "C:\\Users\\USER\\Desktop\\P1817_P1901_research\\runs\\claude_research\\p1817_phd_novelty_20261105_followup\\review.md",
+    "target": "D:\\Gaussian\\archive\\legacy-reviews\\claude-opus-phd-review-v2.md",
+    "sha256": "B5D7FE0B6166938FE545A098179FCA5FCC6A158B9CE9C5C1C629A3F16A71366E",
+    "source_sha256": "B5D7FE0B6166938FE545A098179FCA5FCC6A158B9CE9C5C1C629A3F16A71366E"
+  }
+]

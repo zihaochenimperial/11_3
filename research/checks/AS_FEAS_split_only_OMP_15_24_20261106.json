@@ -1,0 +1,725 @@
+{
+ "note": "FAIL-0023 bookkeeping only (OMP split-only path, images 15-24, both seeds, 4 conditions): whether the restricted candidate set was ever empty. No MSE / quality quantity computed.",
+ "rows": [
+  {
+   "img": 15,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 5,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 15,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.7
+  },
+  {
+   "img": 15,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 6,
+   "status": "empty",
+   "empty_step": 0,
+   "wall": 0.1
+  },
+  {
+   "img": 15,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.5
+  },
+  {
+   "img": 15,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.9
+  },
+  {
+   "img": 15,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 15,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.2
+  },
+  {
+   "img": 15,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 16,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 6,
+   "status": "empty",
+   "empty_step": 0,
+   "wall": 0.1
+  },
+  {
+   "img": 16,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 6,
+   "status": "empty",
+   "empty_step": 0,
+   "wall": 0.1
+  },
+  {
+   "img": 16,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 5,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 16,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 6,
+   "status": "empty",
+   "empty_step": 0,
+   "wall": 0.1
+  },
+  {
+   "img": 16,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 6,
+   "status": "empty",
+   "empty_step": 0,
+   "wall": 0.1
+  },
+  {
+   "img": 16,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 5,
+   "status": "empty",
+   "empty_step": 2,
+   "wall": 0.1
+  },
+  {
+   "img": 16,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 6,
+   "status": "empty",
+   "empty_step": 0,
+   "wall": 0.1
+  },
+  {
+   "img": 16,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 5,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 17,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 17,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 17,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.3
+  },
+  {
+   "img": 17,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.4
+  },
+  {
+   "img": 17,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.3
+  },
+  {
+   "img": 17,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 17,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 17,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 18,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.7
+  },
+  {
+   "img": 18,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.9
+  },
+  {
+   "img": 18,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 18,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 18,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 1,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 18,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.9
+  },
+  {
+   "img": 18,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 18,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.9
+  },
+  {
+   "img": 19,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.5
+  },
+  {
+   "img": 19,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.4
+  },
+  {
+   "img": 19,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 19,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 19,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.2
+  },
+  {
+   "img": 19,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.5
+  },
+  {
+   "img": 19,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.9
+  },
+  {
+   "img": 19,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.9
+  },
+  {
+   "img": 20,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 1,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 20,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 1,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 20,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 1,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.2
+  },
+  {
+   "img": 20,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 1,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.5
+  },
+  {
+   "img": 20,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 20,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.5
+  },
+  {
+   "img": 20,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.3
+  },
+  {
+   "img": 20,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 21,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.2
+  },
+  {
+   "img": 21,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 1,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.7
+  },
+  {
+   "img": 21,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 21,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 21,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.9
+  },
+  {
+   "img": 21,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 1,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 21,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 21,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 22,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 22,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 22,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 22,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 22,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 22,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 22,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 22,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.7
+  },
+  {
+   "img": 23,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.7
+  },
+  {
+   "img": 23,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 23,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.2
+  },
+  {
+   "img": 23,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 23,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.5
+  },
+  {
+   "img": 23,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.9
+  },
+  {
+   "img": 23,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 1,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.0
+  },
+  {
+   "img": 23,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 24,
+   "cond": "C1",
+   "ns": 9001,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 24,
+   "cond": "C1",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.1
+  },
+  {
+   "img": 24,
+   "cond": "C2",
+   "ns": 9001,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.2
+  },
+  {
+   "img": 24,
+   "cond": "C2",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 3.2
+  },
+  {
+   "img": 24,
+   "cond": "C3",
+   "ns": 9001,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.7
+  },
+  {
+   "img": 24,
+   "cond": "C3",
+   "ns": 9002,
+   "k0_clamped": 2,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.6
+  },
+  {
+   "img": 24,
+   "cond": "C4",
+   "ns": 9001,
+   "k0_clamped": 4,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  },
+  {
+   "img": 24,
+   "cond": "C4",
+   "ns": 9002,
+   "k0_clamped": 3,
+   "status": "ok",
+   "empty_step": null,
+   "wall": 2.8
+  }
+ ]
+}

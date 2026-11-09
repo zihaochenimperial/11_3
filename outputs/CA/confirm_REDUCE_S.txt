@@ -1,0 +1,83 @@
+CA reduce confirm block S: 16 images, 768 runs; rep_psnr mean 30.6 (min 26.1 max 35.7)
+
+R0-vs-R1 matching (descriptive): mass_ratio 0.999 [0.993, 1.001]; peak_R0 1.015 [0.948, 1.163]; peak_R1 1.000 [1.000, 1.000]; grad_energy_ratio 0.889 [0.678, 0.968]; lap_energy_ratio 0.783 [0.510, 0.955]
+
+Q-AUC [dB] by cell and arm (mean over images):
+cell                IND1     OBS-J     RND-J
+R0/free            23.11     22.92     22.69
+R0/noisy           21.38     21.32     21.60
+R1/free            22.10     21.97     21.76
+R1/noisy           20.66     20.61     20.93
+
+GAP OBS-J - RND-J (dB; BCa 90% two-sided = one-sided 95% bounds; D if UB<-0.25, E if LB>-0.25):
+  R0/free    mean +0.228  LB5 +0.068  UB95 +0.387  wins 13/16  sd 0.40  -> E
+  R0/noisy   mean -0.282  LB5 -0.441  UB95 -0.167  wins 2/16  sd 0.34  -> I
+  R1/free    mean +0.219  LB5 +0.096  UB95 +0.342  wins 12/16  sd 0.31  -> E
+  R1/noisy   mean -0.323  LB5 -0.522  UB95 -0.205  wins 4/16  sd 0.38  -> I
+  N_effect(noise)    mean -0.526  LB5 -0.675  UB95 -0.388  sd 0.36  MDE80 0.22
+  R_effect(rep+HF content) mean -0.025  LB5 -0.096  UB95 +0.059  sd 0.19  MDE80 0.12
+  I_interaction      mean -0.032  LB5 -0.203  UB95 +0.076  sd 0.34  MDE80 0.21
+  R_eval(data misfit, truth=x_G; secondary) mean -0.070  LB5 -0.144  UB95 +0.023  sd 0.21  MDE80 0.13
+  VERDICT (RND-J): V-INS TENTATIVE
+  wording rule (contract section 7): the words "noise interaction" are authorised only when every D cell below is PERSISTENT; STOP-EFFECT = earlier crossing of the PSNR peak, not worse grouping/repair; CONFOUNDED = stop-time confound not excluded
+  stop-time labels (peak-PSNR gap | matched-fit gap): R0/free E(+0.45)|I(-0.22)  R0/noisy E(-0.01)|E(-0.02)  R1/free E(+0.42)|I(-0.15)  R1/noisy E(-0.05)|I(-0.15)
+  stop-time qualifier of the D cells (R1): n/a {}
+
+GAP OBS-J - IND1 (dB; BCa 90% two-sided = one-sided 95% bounds; D if UB<-0.25, E if LB>-0.25):
+  R0/free    mean -0.191  LB5 -0.430  UB95 -0.024  wins 4/16  sd 0.50  -> I
+  R0/noisy   mean -0.060  LB5 -0.161  UB95 +0.073  wins 5/16  sd 0.29  -> E
+  R1/free    mean -0.129  LB5 -0.324  UB95 +0.014  wins 7/16  sd 0.42  -> I
+  R1/noisy   mean -0.051  LB5 -0.168  UB95 +0.062  wins 9/16  sd 0.29  -> E
+  N_effect(noise)    mean +0.104  LB5 -0.101  UB95 +0.343  sd 0.55  MDE80 0.34
+  R_effect(rep+HF content) mean +0.035  LB5 -0.027  UB95 +0.091  sd 0.15  MDE80 0.09
+  I_interaction      mean -0.053  LB5 -0.183  UB95 +0.047  sd 0.29  MDE80 0.18
+  R_eval(data misfit, truth=x_G; secondary) mean +0.012  LB5 -0.054  UB95 +0.072  sd 0.16  MDE80 0.10
+  VERDICT (IND1): V-INS TENTATIVE
+  wording rule (contract section 7): the words "noise interaction" are authorised only when every D cell below is PERSISTENT; STOP-EFFECT = earlier crossing of the PSNR peak, not worse grouping/repair; CONFOUNDED = stop-time confound not excluded
+  stop-time labels (peak-PSNR gap | matched-fit gap): R0/free E(+0.07)|I(-0.33)  R0/noisy E(+0.06)|E(+0.08)  R1/free E(+0.09)|I(-0.26)  R1/noisy E(+0.07)|E(+0.08)
+  stop-time qualifier of the D cells (R1): n/a {}
+
+Descriptive decomposition pairs (Q-AUC gap a - b, dB; no verdict):
+  RND-J - IND1   R0/free -0.42[-0.59,-0.27]  R0/noisy +0.22[+0.10,+0.35]  R1/free -0.35[-0.51,-0.20]  R1/noisy +0.27[+0.16,+0.38]  N_effectnoi +0.63[+0.45,+0.81]  I_interacti -0.02[-0.11,+0.16]
+
+Supportive outcomes (OBS-J - RND-J):
+  peak|R0/free       mean +0.452  LB5 +0.181  UB95 +0.672  n=16
+  peak|R0/noisy      mean -0.014  LB5 -0.111  UB95 +0.074  n=16
+  peak|R1/free       mean +0.425  LB5 +0.256  UB95 +0.582  n=16
+  peak|R1/noisy      mean -0.050  LB5 -0.113  UB95 +0.007  n=16
+  end|R0/free        mean +0.451  LB5 +0.180  UB95 +0.670  n=16
+  end|R0/noisy       mean -0.607  LB5 -0.824  UB95 -0.404  n=16
+  end|R1/free        mean +0.416  LB5 +0.236  UB95 +0.577  n=16
+  end|R1/noisy       mean -0.583  LB5 -0.900  UB95 -0.380  n=16
+  Qedge|R0/free      mean +0.260  LB5 +0.097  UB95 +0.415  n=16
+  Qedge|R0/noisy     mean -0.134  LB5 -0.264  UB95 -0.020  n=16
+  Qedge|R1/free      mean +0.268  LB5 +0.147  UB95 +0.388  n=16
+  Qedge|R1/noisy     mean -0.182  LB5 -0.335  UB95 -0.081  n=16
+  Qblur|R0/free      mean +1.049  LB5 +0.765  UB95 +1.370  n=16
+  Qblur|R0/noisy     mean +0.254  LB5 +0.045  UB95 +0.514  n=16
+  Qblur|R1/free      mean +1.239  LB5 +0.929  UB95 +1.710  n=16
+  Qblur|R1/noisy     mean +0.224  LB5 +0.000  UB95 +0.523  n=16
+  O|R0/free          mean -0.296  LB5 -0.357  UB95 -0.230  n=16
+  O|R0/noisy         mean -0.408  LB5 -0.467  UB95 -0.338  n=16
+  O|R1/free          mean -0.322  LB5 -0.380  UB95 -0.255  n=16
+  O|R1/noisy         mean -0.389  LB5 -0.452  UB95 -0.312  n=16
+  Qfit4|R0/free      mean -0.155  LB5 -0.296  UB95 -0.089  n=16
+  Qfit4|R0/noisy     mean -0.223  LB5 -0.376  UB95 -0.146  n=16
+  Qfit4|R1/free      mean -0.135  LB5 -0.231  UB95 -0.080  n=16
+  Qfit4|R1/noisy     mean -0.184  LB5 -0.275  UB95 -0.129  n=16
+  Qfit1|R0/free      mean -0.217  LB5 -0.391  UB95 -0.116  n=16
+  Qfit1|R0/noisy     mean -0.034  LB5 -0.141  UB95 +0.079  n=16
+  Qfit1|R1/free      mean -0.149  LB5 -0.277  UB95 -0.070  n=16
+  Qfit1|R1/noisy     mean -0.137  LB5 -0.243  UB95 -0.042  n=15
+  nf|R0/noisy        mean +0.017  LB5 +0.014  UB95 +0.022  n=16
+  nf|R1/noisy        mean +0.017  LB5 +0.014  UB95 +0.020  n=16
+  mf|R1/free         mean +0.056  LB5 +0.035  UB95 +0.079  n=16
+  mf|R1/noisy        mean +0.079  LB5 +0.058  UB95 +0.098  n=16
+  proj|R0/free       mean +0.228  LB5 +0.068  UB95 +0.387  n=16
+  proj|R0/noisy      mean -0.282  LB5 -0.441  UB95 -0.167  n=16
+  proj|R1/free       mean +0.220  LB5 +0.089  UB95 +0.357  n=16
+  proj|R1/noisy      mean -0.414  LB5 -0.637  UB95 -0.280  n=16
+  logWpeak|R0/free   mean -0.001  LB5 -0.004  UB95 +0.000  n=16
+  logWpeak|R0/noisy  mean -0.317  LB5 -0.424  UB95 -0.202  n=16
+  logWpeak|R1/free   mean -0.013  LB5 -0.034  UB95 -0.001  n=16
+  logWpeak|R1/noisy  mean -0.374  LB5 -0.461  UB95 -0.278  n=16

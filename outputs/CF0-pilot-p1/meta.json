@@ -1,0 +1,83 @@
+{
+ "stage": "pilot",
+ "tag": "p1",
+ "debug": false,
+ "M": 0,
+ "draws": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "images": [
+  "E15",
+  "E16",
+  "E17",
+  "E18"
+ ],
+ "workers": 6,
+ "cfg": {
+  "H": 64,
+  "W": 64,
+  "sigma0": 0.08,
+  "K0": 24,
+  "birth_rounds": 3,
+  "births_per_round": 8,
+  "steps_per_stage": 150,
+  "lr_xy": 0.005,
+  "lr_logscale": 0.02,
+  "lr_rot": 0.02,
+  "lr_val": 0.05,
+  "smooth_sigma_px": 1.5,
+  "init_scale_px": 3.0,
+  "birth_scale_px": 2.0,
+  "S_grid": [
+   8,
+   16,
+   64,
+   256,
+   1024
+  ],
+  "M": 256,
+  "entropy": 20261105,
+  "eps_frozen_rel": 0.01,
+  "plin_grid": 16,
+  "plin_scales_px": [
+   1.5,
+   2.5,
+   4.0,
+   6.0
+  ],
+  "plin_rounds": 3
+ },
+ "cfg_hash": "ed7dd6644753752f",
+ "contract_sha": "11d1fc819f5f11ca7814a5a857cee5b2fa9d34508d8d179883449447306dc12c",
+ "frozen_manifest_sha": "963b39bd1a53204570785b2ef7a859377e60d54cf53dfc5f7c95d2370fc4e93e",
+ "entropy": 20261107,
+ "taus": [
+  1.0,
+  2.0,
+  4.0
+ ],
+ "python": "3.12.10",
+ "numpy": "2.5.4",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "start_utc": "2026-11-05T18:38:59Z",
+ "n_tasks": 32,
+ "n_expected": 32,
+ "max_tasks": 0,
+ "replay_bad": [],
+ "rawy_pipeline_bad": [],
+ "done": 32,
+ "n_fit_equiv": 600.0,
+ "wall_s": 576.7452952861786,
+ "aborted": false,
+ "replay_ok": true,
+ "rawy_pipeline_ok": true,
+ "end_utc": "2026-11-05T18:48:36Z",
+ "unit_wall_median": 82.03040540218353
+}
