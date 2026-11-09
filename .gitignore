@@ -10,3 +10,16 @@ data/
 outputs/*/runs/
 outputs/*/fits/
 outputs/*/confirm/
+
+# 公开仓库: 授权与内部运行记录不入库 (本地可有, 不提交)
+memory/AUTHORIZATIONS.md
+memory/CODEX_MONITOR_ZH.md
+memory/HANDOFF_STATUS.md
+memory/HUMAN_PAUSE_*.md
+memory/SYNC_GAPS_ZH.md
+memory/WAKES.md
+memory/FAIL_APPEND_*.md
+memory/STATE.md
+memory/NEXT.md
+memory/INDEX.md
+memory/DECISIONS.md

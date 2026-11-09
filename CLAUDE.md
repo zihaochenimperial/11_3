@@ -1,3 +1,9 @@
+# 当前状态 (2026-11-09; 云端工作方式)
+- **工作方式**: 以后在云端工作, 本仓库 (main) 是主副本; D:/Gaussian 为历史副本, 不再同步。本仓库是**公开**的: 不得提交授权原话、内部运行记录 (STATE/NEXT/DECISIONS/WAKES 等)、用户名/邮箱、调度编号、逐次运行的大体积原始输出 (见 .gitignore 与 CLOUD_MIGRATION_20261109.md)。续接记录放项目文档 (私有), 不放本仓库。
+- **主线状态**: CA 归因节点已完成, 判定 V-INS "证据不足, 不归因" (research/notes/CA_RESULT_20261109.md; memory/FAILURES.md FAIL-0037)。无活动实验、无调度。下一步由真人决定 (有界判别性测试 / P1817 INR 桥接 + 强基线比较 / 暂停); 未授权前不开新线。
+- **本文件下方的 JR / TRN / GEO / AS 段是历史**; 其中引用的 memory/AUTHORIZATIONS.md、STATE.md、NEXT.md 等不在本仓库内。
+- **边界不变**: JR 已 STOP (FAIL-0035) 不重开; 旧 VERIFY / VERIFY2 与确认集 811–826 等已封存或已读取, 不作新证据; 不碰 FATE/P1901/MOE_OPD; CPU/8GB 优先, 不启用额外付费; 保留真实失败、独立评测与数据边界; 主张只分 proposed / validated。
+
 <!-- JR-MAINLINE-BLOCK (置顶; 2026-11-08T21:32:24Z; run 20261108T213141Z-experiment-7986) -->
 > ## 【当前主线 JR -- 真人 2026-11-08 授权「开始完成」(Codex 转交) + Astra high 选题; 取代 TRN-MAINLINE-BLOCK 的主线 (TRN 终态 NEGATIVE、RJ-1 终态 STOP 已收口, 不重开)】
 > **路线 (proposed, 0 已验证贡献; 不保证原创或分数)**: 固定数量 K 的 2D Gaussian、单张观测 + 已知 PSF 去模糊; 研究 **由当前离散白化的模糊响应 (A 作用于原语及其几何导数) 构造观测混淆组, 组内联合有限幅度修复中心/宽度/强度**, 是否比空间邻居分组、或独立更新加线性投影更有效; 最终目标是未见模糊核下的重建质量跨核泛化 (CPU 节点先测机制, 有增量才做单张 8GB 小模型)。混淆须按图像空间变化/校准参数尺度测 (避免坐标单位伪差); 区分噪声尺度下弱可辨识与严格零空间; 每次有限更新由完整真实前向复核。固定 K, 无 birth/merge。
